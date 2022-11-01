@@ -7,19 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E27D660291167C5003798D4 /* FiveStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D65F291167C5003798D4 /* FiveStarView.swift */; };
+		4E27D66429116A4D003798D4 /* SchoolStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D66329116A4D003798D4 /* SchoolStage.swift */; };
+		4E34206529112F9100B6F0C7 /* SchoolEnrollmentApplicationsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */; };
+		4E3632C52910C7F500B37270 /* SchoolFilterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3632C42910C7F500B37270 /* SchoolFilterScene.swift */; };
+		4E3632C82910CBF300B37270 /* FilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3632C72910CBF300B37270 /* FilterSection.swift */; };
+		4E36762C2910ADAF004D8BC8 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36762B2910ADAF004D8BC8 /* ColorConstants.swift */; };
+		4E3676302910AE1A004D8BC8 /* MainSerivcesSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36762F2910AE1A004D8BC8 /* MainSerivcesSceneViewModel.swift */; };
+		4E3676332910B3A0004D8BC8 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3676322910B3A0004D8BC8 /* CustomCorners.swift */; };
+		4E3676362910B86A004D8BC8 /* SchoolExplorerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3676352910B86A004D8BC8 /* SchoolExplorerScene.swift */; };
+		4E3676392910BC09004D8BC8 /* SchoolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3676382910BC09004D8BC8 /* SchoolRow.swift */; };
+		4E36763B2910C023004D8BC8 /* viewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36763A2910C023004D8BC8 /* viewModifiers.swift */; };
+		4E395A5A2911554C00EB1A12 /* StudentAttendanceRecordScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E395A592911554C00EB1A12 /* StudentAttendanceRecordScene.swift */; };
+		4E3C1591291175F50030ACE9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C1590291175F50030ACE9 /* Location.swift */; };
+		4E3C1595291177230030ACE9 /* SHomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C1594291177220030ACE9 /* SHomeTabBar.swift */; };
+		4E3C15972911774A0030ACE9 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C15962911774A0030ACE9 /* TabBar.swift */; };
+		4E48205C29110BCE007FC403 /* SliderRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E48205B29110BCE007FC403 /* SliderRange.swift */; };
+		4E48205E29111079007FC403 /* SchoolExplorerSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E48205D29111079007FC403 /* SchoolExplorerSceneViewModel.swift */; };
+		4E482060291110E0007FC403 /* StudentAcademicLevelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E48205F291110E0007FC403 /* StudentAcademicLevelRow.swift */; };
+		4E482063291111CA007FC403 /* SchoolDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E482062291111CA007FC403 /* SchoolDetailScene.swift */; };
+		4E4DB9D429113B420069F334 /* SchoolTransportionServicesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DB9D329113B420069F334 /* SchoolTransportionServicesScene.swift */; };
+		4E4DB9D729113B950069F334 /* SchoolEnrollmentApplicationsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DB9D629113B950069F334 /* SchoolEnrollmentApplicationsRowView.swift */; };
+		4E4DB9D929113E230069F334 /* SchoolTransportionServicesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DB9D829113E230069F334 /* SchoolTransportionServicesRowView.swift */; };
+		4E4DB9DB29113EDB0069F334 /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DB9DA29113EDB0069F334 /* SliderValue.swift */; };
+		4E4DB9DD2911445A0069F334 /* SchoolSubmitApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DB9DC2911445A0069F334 /* SchoolSubmitApplication.swift */; };
 		4E6802CA291023250090A3D7 /* DarbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6802C9291023250090A3D7 /* DarbApp.swift */; };
 		4E6802CC291023250090A3D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6802CB291023250090A3D7 /* ContentView.swift */; };
 		4E6802CE291023260090A3D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6802CD291023260090A3D7 /* Assets.xcassets */; };
 		4E6802D2291023260090A3D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6802D1291023260090A3D7 /* Preview Assets.xcassets */; };
+		4E7AB2EF2910E98100DF6EC0 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AB2EE2910E98100DF6EC0 /* Custom.swift */; };
+		4E7AB2F12910EAAC00DF6EC0 /* CustomRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AB2F02910EAAC00DF6EC0 /* CustomRatingView.swift */; };
+		4E9E458929117A7200715A7D /* StudentStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458829117A7200715A7D /* StudentStage.swift */; };
+		4E9E458B29117C1D00715A7D /* UploadBirthCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */; };
+		4E9E458E291180B300715A7D /* UploadPortraitPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458D291180B300715A7D /* UploadPortraitPhoto.swift */; };
+		4E9E4590291180C100715A7D /* UploadHealthReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458F291180C100715A7D /* UploadHealthReport.swift */; };
+		4EAE1317291023FC00141181 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE1316291023FC00141181 /* AppHelper.swift */; };
+		4EAE13192910240B00141181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE13182910240B00141181 /* AppDelegate.swift */; };
+		4EAE131C2910244800141181 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE131B2910244800141181 /* hideKeyboard.swift */; };
+		4EAE13252910280900141181 /* EX_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE13242910280900141181 /* EX_View.swift */; };
+		4EAE132829102B2400141181 /* ServiceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE132729102B2400141181 /* ServiceRow.swift */; };
+		4EAE132A29102F2200141181 /* MainSerivcesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE132929102F2200141181 /* MainSerivcesScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E27D65F291167C5003798D4 /* FiveStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarView.swift; sourceTree = "<group>"; };
+		4E27D66329116A4D003798D4 /* SchoolStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolStage.swift; sourceTree = "<group>"; };
+		4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEnrollmentApplicationsScene.swift; sourceTree = "<group>"; };
+		4E3632C42910C7F500B37270 /* SchoolFilterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolFilterScene.swift; sourceTree = "<group>"; };
+		4E3632C72910CBF300B37270 /* FilterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSection.swift; sourceTree = "<group>"; };
+		4E36762B2910ADAF004D8BC8 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		4E36762F2910AE1A004D8BC8 /* MainSerivcesSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSerivcesSceneViewModel.swift; sourceTree = "<group>"; };
+		4E3676322910B3A0004D8BC8 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		4E3676352910B86A004D8BC8 /* SchoolExplorerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolExplorerScene.swift; sourceTree = "<group>"; };
+		4E3676382910BC09004D8BC8 /* SchoolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRow.swift; sourceTree = "<group>"; };
+		4E36763A2910C023004D8BC8 /* viewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModifiers.swift; sourceTree = "<group>"; };
+		4E395A592911554C00EB1A12 /* StudentAttendanceRecordScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttendanceRecordScene.swift; sourceTree = "<group>"; };
+		4E3C1590291175F50030ACE9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4E3C1594291177220030ACE9 /* SHomeTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHomeTabBar.swift; sourceTree = "<group>"; };
+		4E3C15962911774A0030ACE9 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		4E48205B29110BCE007FC403 /* SliderRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderRange.swift; sourceTree = "<group>"; };
+		4E48205D29111079007FC403 /* SchoolExplorerSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolExplorerSceneViewModel.swift; sourceTree = "<group>"; };
+		4E48205F291110E0007FC403 /* StudentAcademicLevelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAcademicLevelRow.swift; sourceTree = "<group>"; };
+		4E482062291111CA007FC403 /* SchoolDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailScene.swift; sourceTree = "<group>"; };
+		4E4DB9D329113B420069F334 /* SchoolTransportionServicesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SchoolTransportionServicesScene.swift; path = "Darb/scene/Services/School Enrollment Applications/SchoolTransportionServicesScene.swift"; sourceTree = SOURCE_ROOT; };
+		4E4DB9D629113B950069F334 /* SchoolEnrollmentApplicationsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEnrollmentApplicationsRowView.swift; sourceTree = "<group>"; };
+		4E4DB9D829113E230069F334 /* SchoolTransportionServicesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTransportionServicesRowView.swift; sourceTree = "<group>"; };
+		4E4DB9DA29113EDB0069F334 /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
+		4E4DB9DC2911445A0069F334 /* SchoolSubmitApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSubmitApplication.swift; sourceTree = "<group>"; };
 		4E6802C6291023250090A3D7 /* Darb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6802C9291023250090A3D7 /* DarbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarbApp.swift; sourceTree = "<group>"; };
 		4E6802CB291023250090A3D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E6802CD291023260090A3D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E6802CF291023260090A3D7 /* Darb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Darb.entitlements; sourceTree = "<group>"; };
 		4E6802D1291023260090A3D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E7AB2EE2910E98100DF6EC0 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		4E7AB2F02910EAAC00DF6EC0 /* CustomRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRatingView.swift; sourceTree = "<group>"; };
+		4E9E458829117A7200715A7D /* StudentStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStage.swift; sourceTree = "<group>"; };
+		4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadBirthCertificate.swift; sourceTree = "<group>"; };
+		4E9E458D291180B300715A7D /* UploadPortraitPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPortraitPhoto.swift; sourceTree = "<group>"; };
+		4E9E458F291180C100715A7D /* UploadHealthReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadHealthReport.swift; sourceTree = "<group>"; };
+		4EAE1316291023FC00141181 /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		4EAE13182910240B00141181 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EAE131B2910244800141181 /* hideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
+		4EAE13242910280900141181 /* EX_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EX_View.swift; sourceTree = "<group>"; };
+		4EAE132729102B2400141181 /* ServiceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRow.swift; sourceTree = "<group>"; };
+		4EAE132929102F2200141181 /* MainSerivcesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSerivcesScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +105,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E27D66129116A32003798D4 /* School Stage */ = {
+			isa = PBXGroup;
+			children = (
+				4E27D66329116A4D003798D4 /* SchoolStage.swift */,
+			);
+			path = "School Stage";
+			sourceTree = "<group>";
+		};
+		4E27D66229116A43003798D4 /* School Stage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "School Stage";
+			sourceTree = "<group>";
+		};
+		4E34206229112F7300B6F0C7 /* School Enrollment Applications */ = {
+			isa = PBXGroup;
+			children = (
+				4E9E458729117A6600715A7D /* student stage */,
+				4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */,
+				4E27D66129116A32003798D4 /* School Stage */,
+			);
+			path = "School Enrollment Applications";
+			sourceTree = "<group>";
+		};
+		4E34206329112F7C00B6F0C7 /* School Enrollment Applications */ = {
+			isa = PBXGroup;
+			children = (
+				4E9E458629117A4700715A7D /* student stage */,
+				4E27D66229116A43003798D4 /* School Stage */,
+				4E4DB9D629113B950069F334 /* SchoolEnrollmentApplicationsRowView.swift */,
+			);
+			path = "School Enrollment Applications";
+			sourceTree = "<group>";
+		};
+		4E3632C32910C7E000B37270 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				4E3632C42910C7F500B37270 /* SchoolFilterScene.swift */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+		4E3632C62910CBE900B37270 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				4E3632C72910CBF300B37270 /* FilterSection.swift */,
+				4E48205B29110BCE007FC403 /* SliderRange.swift */,
+				4E48205F291110E0007FC403 /* StudentAcademicLevelRow.swift */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+		4E3676312910B399004D8BC8 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				4E3676322910B3A0004D8BC8 /* CustomCorners.swift */,
+				4E36763A2910C023004D8BC8 /* viewModifiers.swift */,
+				4E7AB2EE2910E98100DF6EC0 /* Custom.swift */,
+				4E7AB2F02910EAAC00DF6EC0 /* CustomRatingView.swift */,
+				4E4DB9DA29113EDB0069F334 /* SliderValue.swift */,
+				4E27D65F291167C5003798D4 /* FiveStarView.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		4E3676342910B855004D8BC8 /* school */ = {
+			isa = PBXGroup;
+			children = (
+				4E3676352910B86A004D8BC8 /* SchoolExplorerScene.swift */,
+			);
+			path = school;
+			sourceTree = "<group>";
+		};
+		4E3676372910BC00004D8BC8 /* school */ = {
+			isa = PBXGroup;
+			children = (
+				4E3676382910BC09004D8BC8 /* SchoolRow.swift */,
+			);
+			path = school;
+			sourceTree = "<group>";
+		};
+		4E3C1592291175F70030ACE9 /* location maps */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C1590291175F50030ACE9 /* Location.swift */,
+			);
+			path = "location maps";
+			sourceTree = "<group>";
+		};
+		4E3C1593291177130030ACE9 /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C1594291177220030ACE9 /* SHomeTabBar.swift */,
+				4E3C15962911774A0030ACE9 /* TabBar.swift */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+		4E482061291111B0007FC403 /* School Details */ = {
+			isa = PBXGroup;
+			children = (
+				4E482062291111CA007FC403 /* SchoolDetailScene.swift */,
+			);
+			path = "School Details";
+			sourceTree = "<group>";
+		};
+		4E482064291111D0007FC403 /* School Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "School Details";
+			sourceTree = "<group>";
+		};
+		4E4DB9D229113B1D0069F334 /* school trasnportion services */ = {
+			isa = PBXGroup;
+			children = (
+				4E4DB9D329113B420069F334 /* SchoolTransportionServicesScene.swift */,
+				4E4DB9DC2911445A0069F334 /* SchoolSubmitApplication.swift */,
+			);
+			path = "school trasnportion services";
+			sourceTree = "<group>";
+		};
+		4E4DB9D529113B4A0069F334 /* school trasnportion services */ = {
+			isa = PBXGroup;
+			children = (
+				4E4DB9D829113E230069F334 /* SchoolTransportionServicesRowView.swift */,
+			);
+			path = "school trasnportion services";
+			sourceTree = "<group>";
+		};
 		4E6802BD291023250090A3D7 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +256,12 @@
 			isa = PBXGroup;
 			children = (
 				4E6802C9291023250090A3D7 /* DarbApp.swift */,
+				4EAE131A2910243E00141181 /* extension */,
+				4E6802D82910236B0090A3D7 /* helpers */,
+				4EAE131E291024A200141181 /* viewmodel */,
+				4EAE131D2910249C00141181 /* model */,
+				4EAE131F291024A700141181 /* view */,
+				4EAE1320291024AA00141181 /* scene */,
 				4E6802CB291023250090A3D7 /* ContentView.swift */,
 				4E6802CD291023260090A3D7 /* Assets.xcassets */,
 				4E6802CF291023260090A3D7 /* Darb.entitlements */,
@@ -67,6 +276,113 @@
 				4E6802D1291023260090A3D7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E6802D82910236B0090A3D7 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE13182910240B00141181 /* AppDelegate.swift */,
+				4EAE1316291023FC00141181 /* AppHelper.swift */,
+				4E36762B2910ADAF004D8BC8 /* ColorConstants.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		4E9E458629117A4700715A7D /* student stage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "student stage";
+			sourceTree = "<group>";
+		};
+		4E9E458729117A6600715A7D /* student stage */ = {
+			isa = PBXGroup;
+			children = (
+				4E9E458829117A7200715A7D /* StudentStage.swift */,
+				4E9E458C2911809700715A7D /* upload */,
+			);
+			path = "student stage";
+			sourceTree = "<group>";
+		};
+		4E9E458C2911809700715A7D /* upload */ = {
+			isa = PBXGroup;
+			children = (
+				4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */,
+				4E9E458D291180B300715A7D /* UploadPortraitPhoto.swift */,
+				4E9E458F291180C100715A7D /* UploadHealthReport.swift */,
+			);
+			path = upload;
+			sourceTree = "<group>";
+		};
+		4EAE131A2910243E00141181 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE13242910280900141181 /* EX_View.swift */,
+				4EAE131B2910244800141181 /* hideKeyboard.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		4EAE131D2910249C00141181 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4EAE131E291024A200141181 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				4E36762F2910AE1A004D8BC8 /* MainSerivcesSceneViewModel.swift */,
+				4E48205D29111079007FC403 /* SchoolExplorerSceneViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		4EAE131F291024A700141181 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4E3676312910B399004D8BC8 /* custom */,
+				4EAE132629102B1A00141181 /* Services */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4EAE1320291024AA00141181 /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C1593291177130030ACE9 /* tabbar */,
+				4EAE13212910268C00141181 /* Services */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
+		4EAE13212910268C00141181 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E4DB9D229113B1D0069F334 /* school trasnportion services */,
+				4E34206229112F7300B6F0C7 /* School Enrollment Applications */,
+				4E482061291111B0007FC403 /* School Details */,
+				4E3632C32910C7E000B37270 /* filter */,
+				4E3676342910B855004D8BC8 /* school */,
+				4EAE132929102F2200141181 /* MainSerivcesScene.swift */,
+				4E395A592911554C00EB1A12 /* StudentAttendanceRecordScene.swift */,
+				4E3C1592291175F70030ACE9 /* location maps */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4EAE132629102B1A00141181 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E4DB9D529113B4A0069F334 /* school trasnportion services */,
+				4E34206329112F7C00B6F0C7 /* School Enrollment Applications */,
+				4E482064291111D0007FC403 /* School Details */,
+				4E3632C62910CBE900B37270 /* filter */,
+				4E3676372910BC00004D8BC8 /* school */,
+				4EAE132729102B2400141181 /* ServiceRow.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +455,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E48205C29110BCE007FC403 /* SliderRange.swift in Sources */,
+				4E4DB9DB29113EDB0069F334 /* SliderValue.swift in Sources */,
+				4E3C1591291175F50030ACE9 /* Location.swift in Sources */,
+				4E3C1595291177230030ACE9 /* SHomeTabBar.swift in Sources */,
+				4E7AB2F12910EAAC00DF6EC0 /* CustomRatingView.swift in Sources */,
+				4E4DB9D729113B950069F334 /* SchoolEnrollmentApplicationsRowView.swift in Sources */,
+				4E27D660291167C5003798D4 /* FiveStarView.swift in Sources */,
+				4E3C15972911774A0030ACE9 /* TabBar.swift in Sources */,
+				4E27D66429116A4D003798D4 /* SchoolStage.swift in Sources */,
+				4E4DB9DD2911445A0069F334 /* SchoolSubmitApplication.swift in Sources */,
+				4E34206529112F9100B6F0C7 /* SchoolEnrollmentApplicationsScene.swift in Sources */,
+				4EAE131C2910244800141181 /* hideKeyboard.swift in Sources */,
+				4E3676392910BC09004D8BC8 /* SchoolRow.swift in Sources */,
+				4E3632C52910C7F500B37270 /* SchoolFilterScene.swift in Sources */,
+				4EAE13192910240B00141181 /* AppDelegate.swift in Sources */,
+				4E9E458929117A7200715A7D /* StudentStage.swift in Sources */,
 				4E6802CC291023250090A3D7 /* ContentView.swift in Sources */,
+				4E3676302910AE1A004D8BC8 /* MainSerivcesSceneViewModel.swift in Sources */,
+				4E36762C2910ADAF004D8BC8 /* ColorConstants.swift in Sources */,
+				4E3676332910B3A0004D8BC8 /* CustomCorners.swift in Sources */,
+				4EAE1317291023FC00141181 /* AppHelper.swift in Sources */,
+				4E3632C82910CBF300B37270 /* FilterSection.swift in Sources */,
+				4E4DB9D429113B420069F334 /* SchoolTransportionServicesScene.swift in Sources */,
+				4E48205E29111079007FC403 /* SchoolExplorerSceneViewModel.swift in Sources */,
+				4EAE132829102B2400141181 /* ServiceRow.swift in Sources */,
+				4EAE132A29102F2200141181 /* MainSerivcesScene.swift in Sources */,
 				4E6802CA291023250090A3D7 /* DarbApp.swift in Sources */,
+				4E9E4590291180C100715A7D /* UploadHealthReport.swift in Sources */,
+				4EAE13252910280900141181 /* EX_View.swift in Sources */,
+				4E9E458B29117C1D00715A7D /* UploadBirthCertificate.swift in Sources */,
+				4E9E458E291180B300715A7D /* UploadPortraitPhoto.swift in Sources */,
+				4E4DB9D929113E230069F334 /* SchoolTransportionServicesRowView.swift in Sources */,
+				4E395A5A2911554C00EB1A12 /* StudentAttendanceRecordScene.swift in Sources */,
+				4E3676362910B86A004D8BC8 /* SchoolExplorerScene.swift in Sources */,
+				4E36763B2910C023004D8BC8 /* viewModifiers.swift in Sources */,
+				4E482063291111CA007FC403 /* SchoolDetailScene.swift in Sources */,
+				4E7AB2EF2910E98100DF6EC0 /* Custom.swift in Sources */,
+				4E482060291110E0007FC403 /* StudentAcademicLevelRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +631,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -317,7 +669,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
