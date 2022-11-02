@@ -47,9 +47,12 @@
 		4EAE13252910280900141181 /* EX_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE13242910280900141181 /* EX_View.swift */; };
 		4EAE132829102B2400141181 /* ServiceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE132729102B2400141181 /* ServiceRow.swift */; };
 		4EAE132A29102F2200141181 /* MainSerivcesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE132929102F2200141181 /* MainSerivcesScene.swift */; };
+		A62506566E4E6DE80591C4B2 /* Pods_Darb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AA7AD9E03E7718CA85D0EA /* Pods_Darb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CEA4160D7851E6BEA340DE5 /* Pods-Darb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darb.release.xcconfig"; path = "Target Support Files/Pods-Darb/Pods-Darb.release.xcconfig"; sourceTree = "<group>"; };
+		49AA7AD9E03E7718CA85D0EA /* Pods_Darb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Darb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E27D65F291167C5003798D4 /* FiveStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarView.swift; sourceTree = "<group>"; };
 		4E27D66329116A4D003798D4 /* SchoolStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolStage.swift; sourceTree = "<group>"; };
 		4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEnrollmentApplicationsScene.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		4EAE13242910280900141181 /* EX_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EX_View.swift; sourceTree = "<group>"; };
 		4EAE132729102B2400141181 /* ServiceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRow.swift; sourceTree = "<group>"; };
 		4EAE132929102F2200141181 /* MainSerivcesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSerivcesScene.swift; sourceTree = "<group>"; };
+		8D87FA025A49B2E36585AA22 /* Pods-Darb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darb.debug.xcconfig"; path = "Target Support Files/Pods-Darb/Pods-Darb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62506566E4E6DE80591C4B2 /* Pods_Darb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2432376715113424A426D4E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49AA7AD9E03E7718CA85D0EA /* Pods_Darb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E27D66129116A32003798D4 /* School Stage */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +254,8 @@
 			children = (
 				4E6802C8291023250090A3D7 /* Darb */,
 				4E6802C7291023250090A3D7 /* Products */,
+				D55DD02BE0F2D0C5C65FC84D /* Pods */,
+				2432376715113424A426D4E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -385,6 +400,16 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		D55DD02BE0F2D0C5C65FC84D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D87FA025A49B2E36585AA22 /* Pods-Darb.debug.xcconfig */,
+				2CEA4160D7851E6BEA340DE5 /* Pods-Darb.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,9 +417,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E6802D5291023260090A3D7 /* Build configuration list for PBXNativeTarget "Darb" */;
 			buildPhases = (
+				3226303A8AC1EF490382F722 /* [CP] Check Pods Manifest.lock */,
 				4E6802C2291023250090A3D7 /* Sources */,
 				4E6802C3291023250090A3D7 /* Frameworks */,
 				4E6802C4291023250090A3D7 /* Resources */,
+				89E6384635E3D0BAD9030CB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -449,6 +476,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3226303A8AC1EF490382F722 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Darb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E6384635E3D0BAD9030CB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Darb/Pods-Darb-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Darb/Pods-Darb-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Darb/Pods-Darb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E6802C2291023250090A3D7 /* Sources */ = {
@@ -610,6 +679,7 @@
 		};
 		4E6802D6291023260090A3D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D87FA025A49B2E36585AA22 /* Pods-Darb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -648,6 +718,7 @@
 		};
 		4E6802D7291023260090A3D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEA4160D7851E6BEA340DE5 /* Pods-Darb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
