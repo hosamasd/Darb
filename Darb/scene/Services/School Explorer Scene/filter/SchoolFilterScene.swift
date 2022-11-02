@@ -48,7 +48,7 @@ struct SchoolFilterScene: View {
                     
                     Button {
                         withAnimation{
-                            
+                            reset()
                         }
                     } label: {
                         Text("Reset")
@@ -133,6 +133,7 @@ struct SchoolFilterScene: View {
                         
                         
                         FilterSection(name: "SCHOOL FILTERS")
+                            .padding(.top)
                         
                         FilterHeadSection(name: "School Curriculum")
                         
@@ -189,7 +190,7 @@ struct SchoolFilterScene: View {
             
             
             .padding(.top,isSmallDevice() ? 16 : 0)
-
+            
             //            .padding(.top,40)
             
             
@@ -204,17 +205,24 @@ struct SchoolFilterScene: View {
         
         .onChange(of: vm.selectedSchoolCurriculum.id) { newValue in
             vm.countCurricum=1
-//            vm.countCurricum += 1
-//            self.vm.filterCount = vm.countCurricum == 1 ? vm.filterCount+1 : vm.filterCount
         }
         
         .onChange(of: vm.selectedStudentAcademicLevels.id) { newValue in
             vm.countGrade = 1
-//            vm.countGrade += 1
-//            self.vm.filterCount = vm.countGrade == 1 ? vm.filterCount+1 : vm.filterCount
         }
-        //        .padding(.horizontal,24)
         
+    }
+    
+    func reset()  {
+        vm.isMale=true
+        vm.selectedSchoolCurriculum=StudentAcademicLevelModel(id: -1,name: "")
+        vm.selectedStudentAcademicLevels=StudentAcademicLevelModel(id: -1,name: "")
+        
+        vm.selectedSchoolLocation=StudentAcademicLevelModel(id: -1,name: "")
+        vm.selectedRating=""
+        vm.lowerValue=0
+        vm.highetValue=50
+        vm.sliderPosition = 0...50
     }
     
     func isFemale() -> String {

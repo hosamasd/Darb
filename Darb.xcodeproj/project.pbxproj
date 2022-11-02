@@ -10,6 +10,8 @@
 		4E0D13A529127C5900F75B06 /* ListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D13A429127C5900F75B06 /* ListTable.swift */; };
 		4E27D660291167C5003798D4 /* FiveStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D65F291167C5003798D4 /* FiveStarView.swift */; };
 		4E27D66429116A4D003798D4 /* SchoolStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D66329116A4D003798D4 /* SchoolStage.swift */; };
+		4E2D283E2912AF4700A2AC7B /* SchoolStageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D283D2912AF4700A2AC7B /* SchoolStageViewModel.swift */; };
+		4E2D28402912AF7B00A2AC7B /* SchoolEnrollmentApplicationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D283F2912AF7B00A2AC7B /* SchoolEnrollmentApplicationsViewModel.swift */; };
 		4E34206529112F9100B6F0C7 /* SchoolEnrollmentApplicationsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */; };
 		4E3632C52910C7F500B37270 /* SchoolFilterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3632C42910C7F500B37270 /* SchoolFilterScene.swift */; };
 		4E3632C82910CBF300B37270 /* FilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3632C72910CBF300B37270 /* FilterSection.swift */; };
@@ -40,7 +42,6 @@
 		4E7AB2F12910EAAC00DF6EC0 /* CustomRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AB2F02910EAAC00DF6EC0 /* CustomRatingView.swift */; };
 		4E8DDAC429120D7700779F01 /* ReviewStageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DDAC329120D7700779F01 /* ReviewStageScene.swift */; };
 		4E92C37A29122DBF008E7450 /* ChooseLocationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92C37929122DBF008E7450 /* ChooseLocationScene.swift */; };
-		4E92C37C291231FD008E7450 /* SecsondChooseLocationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92C37B291231FD008E7450 /* SecsondChooseLocationScene.swift */; };
 		4E92C37E29123363008E7450 /* SecondChooseLocationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92C37D29123363008E7450 /* SecondChooseLocationScene.swift */; };
 		4E9E458929117A7200715A7D /* StudentStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458829117A7200715A7D /* StudentStage.swift */; };
 		4E9E458B29117C1D00715A7D /* UploadBirthCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */; };
@@ -61,6 +62,8 @@
 		4E0D13A429127C5900F75B06 /* ListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTable.swift; sourceTree = "<group>"; };
 		4E27D65F291167C5003798D4 /* FiveStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarView.swift; sourceTree = "<group>"; };
 		4E27D66329116A4D003798D4 /* SchoolStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolStage.swift; sourceTree = "<group>"; };
+		4E2D283D2912AF4700A2AC7B /* SchoolStageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolStageViewModel.swift; sourceTree = "<group>"; };
+		4E2D283F2912AF7B00A2AC7B /* SchoolEnrollmentApplicationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEnrollmentApplicationsViewModel.swift; sourceTree = "<group>"; };
 		4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEnrollmentApplicationsScene.swift; sourceTree = "<group>"; };
 		4E3632C42910C7F500B37270 /* SchoolFilterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolFilterScene.swift; sourceTree = "<group>"; };
 		4E3632C72910CBF300B37270 /* FilterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSection.swift; sourceTree = "<group>"; };
@@ -93,7 +96,6 @@
 		4E7AB2F02910EAAC00DF6EC0 /* CustomRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRatingView.swift; sourceTree = "<group>"; };
 		4E8DDAC329120D7700779F01 /* ReviewStageScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewStageScene.swift; sourceTree = "<group>"; };
 		4E92C37929122DBF008E7450 /* ChooseLocationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationScene.swift; sourceTree = "<group>"; };
-		4E92C37B291231FD008E7450 /* SecsondChooseLocationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecsondChooseLocationScene.swift; sourceTree = "<group>"; };
 		4E92C37D29123363008E7450 /* SecondChooseLocationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChooseLocationScene.swift; sourceTree = "<group>"; };
 		4E9E458829117A7200715A7D /* StudentStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStage.swift; sourceTree = "<group>"; };
 		4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadBirthCertificate.swift; sourceTree = "<group>"; };
@@ -151,13 +153,30 @@
 			path = "School Stage";
 			sourceTree = "<group>";
 		};
+		4E2D283C2912AF0500A2AC7B /* Student Attendance Record */ = {
+			isa = PBXGroup;
+			children = (
+				4E395A592911554C00EB1A12 /* StudentAttendanceRecordScene.swift */,
+				4E0D13A329127C4200F75B06 /* table */,
+			);
+			path = "Student Attendance Record";
+			sourceTree = "<group>";
+		};
+		4E2D28412912AFA200A2AC7B /* review stage */ = {
+			isa = PBXGroup;
+			children = (
+				4E8DDAC329120D7700779F01 /* ReviewStageScene.swift */,
+			);
+			path = "review stage";
+			sourceTree = "<group>";
+		};
 		4E34206229112F7300B6F0C7 /* School Enrollment Applications */ = {
 			isa = PBXGroup;
 			children = (
-				4E9E458729117A6600715A7D /* student stage */,
 				4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */,
+				4E9E458729117A6600715A7D /* student stage */,
 				4E27D66129116A32003798D4 /* School Stage */,
-				4E8DDAC329120D7700779F01 /* ReviewStageScene.swift */,
+				4E2D28412912AFA200A2AC7B /* review stage */,
 			);
 			path = "School Enrollment Applications";
 			sourceTree = "<group>";
@@ -204,26 +223,27 @@
 			path = custom;
 			sourceTree = "<group>";
 		};
-		4E3676342910B855004D8BC8 /* school */ = {
+		4E3676342910B855004D8BC8 /* School Explorer Scene */ = {
 			isa = PBXGroup;
 			children = (
-				4E3632C32910C7E000B37270 /* filter */,
 				4E3676352910B86A004D8BC8 /* SchoolExplorerScene.swift */,
+				4E3632C32910C7E000B37270 /* filter */,
 			);
-			path = school;
+			path = "School Explorer Scene";
 			sourceTree = "<group>";
 		};
-		4E3676372910BC00004D8BC8 /* school */ = {
+		4E3676372910BC00004D8BC8 /* SchoolExplorerScene */ = {
 			isa = PBXGroup;
 			children = (
 				4E3676382910BC09004D8BC8 /* SchoolRow.swift */,
 			);
-			path = school;
+			path = SchoolExplorerScene;
 			sourceTree = "<group>";
 		};
 		4E3C1592291175F70030ACE9 /* location maps */ = {
 			isa = PBXGroup;
 			children = (
+				4E92C37929122DBF008E7450 /* ChooseLocationScene.swift */,
 				4E3C1590291175F50030ACE9 /* Location.swift */,
 			);
 			path = "location maps";
@@ -258,8 +278,6 @@
 			children = (
 				4E4DB9D329113B420069F334 /* SchoolTransportionServicesScene.swift */,
 				4E4DB9DC2911445A0069F334 /* SchoolSubmitApplication.swift */,
-				4E92C37929122DBF008E7450 /* ChooseLocationScene.swift */,
-				4E92C37B291231FD008E7450 /* SecsondChooseLocationScene.swift */,
 			);
 			path = "school trasnportion services";
 			sourceTree = "<group>";
@@ -373,6 +391,8 @@
 			children = (
 				4E36762F2910AE1A004D8BC8 /* MainSerivcesSceneViewModel.swift */,
 				4E48205D29111079007FC403 /* SchoolExplorerSceneViewModel.swift */,
+				4E2D283D2912AF4700A2AC7B /* SchoolStageViewModel.swift */,
+				4E2D283F2912AF7B00A2AC7B /* SchoolEnrollmentApplicationsViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -398,13 +418,12 @@
 		4EAE13212910268C00141181 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4EAE132929102F2200141181 /* MainSerivcesScene.swift */,
 				4E4DB9D229113B1D0069F334 /* school trasnportion services */,
 				4E34206229112F7300B6F0C7 /* School Enrollment Applications */,
 				4E482061291111B0007FC403 /* School Details */,
-				4E3676342910B855004D8BC8 /* school */,
-				4EAE132929102F2200141181 /* MainSerivcesScene.swift */,
-				4E395A592911554C00EB1A12 /* StudentAttendanceRecordScene.swift */,
-				4E0D13A329127C4200F75B06 /* table */,
+				4E3676342910B855004D8BC8 /* School Explorer Scene */,
+				4E2D283C2912AF0500A2AC7B /* Student Attendance Record */,
 				4E3C1592291175F70030ACE9 /* location maps */,
 			);
 			path = Services;
@@ -417,7 +436,7 @@
 				4E34206329112F7C00B6F0C7 /* School Enrollment Applications */,
 				4E482064291111D0007FC403 /* School Details */,
 				4E3632C62910CBE900B37270 /* filter */,
-				4E3676372910BC00004D8BC8 /* school */,
+				4E3676372910BC00004D8BC8 /* SchoolExplorerScene */,
 				4EAE132729102B2400141181 /* ServiceRow.swift */,
 			);
 			path = Services;
@@ -567,6 +586,7 @@
 				4E9E458929117A7200715A7D /* StudentStage.swift in Sources */,
 				4E6802CC291023250090A3D7 /* ContentView.swift in Sources */,
 				4E3676302910AE1A004D8BC8 /* MainSerivcesSceneViewModel.swift in Sources */,
+				4E2D28402912AF7B00A2AC7B /* SchoolEnrollmentApplicationsViewModel.swift in Sources */,
 				4E36762C2910ADAF004D8BC8 /* ColorConstants.swift in Sources */,
 				4E3676332910B3A0004D8BC8 /* CustomCorners.swift in Sources */,
 				4EAE1317291023FC00141181 /* AppHelper.swift in Sources */,
@@ -581,8 +601,8 @@
 				4EAE13252910280900141181 /* EX_View.swift in Sources */,
 				4E9E458B29117C1D00715A7D /* UploadBirthCertificate.swift in Sources */,
 				4E9E458E291180B300715A7D /* UploadPortraitPhoto.swift in Sources */,
-				4E92C37C291231FD008E7450 /* SecsondChooseLocationScene.swift in Sources */,
 				4E4DB9D929113E230069F334 /* SchoolTransportionServicesRowView.swift in Sources */,
+				4E2D283E2912AF4700A2AC7B /* SchoolStageViewModel.swift in Sources */,
 				4E395A5A2911554C00EB1A12 /* StudentAttendanceRecordScene.swift in Sources */,
 				4E3676362910B86A004D8BC8 /* SchoolExplorerScene.swift in Sources */,
 				4E36763B2910C023004D8BC8 /* viewModifiers.swift in Sources */,

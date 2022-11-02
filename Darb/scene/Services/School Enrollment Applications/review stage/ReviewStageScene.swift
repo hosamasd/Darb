@@ -12,7 +12,7 @@ struct ReviewRow:View {
     
     var body: some View {
         VStack{
-           
+            
             HStack {
                 Text(x)
                     .foregroundColor(ColorConstants.subTtitle2)
@@ -29,13 +29,13 @@ struct ReviewRow:View {
 
 struct ReviewStageScene: View {
     @ObservedObject var vm:SchoolStageViewModel
-
+    
     
     var body: some View {
         VStack(spacing:16) {
             
             FilterSection(name: "SCHOOL INFORMATION")
-
+            
             
             FilterHeadSection(name: "School Name")
             
@@ -45,36 +45,36 @@ struct ReviewStageScene: View {
             FilterHeadSection(name: "School Curriculum")
             
             ReviewRow(x: vm.selectedSchoolName.name)
-
+            
             
             FilterHeadSection(name: "School Education Level ")
             
             ReviewRow(x: vm.selectedSchoolEducation.name)
-
+            
             
             VStack{
                 
-               
+                
                 
                 FilterSection(name: "STUDENT INFORMATION")
-
+                
                 FilterHeadSection(name: "First Name")
-
+                
                 ReviewRow(x: vm.firstName)
-
+                
                 FilterHeadSection(name: "Last Name")
-
+                
                 
                 ReviewRow(x: vm.lastName)
-
+                
                 
                 FilterHeadSection(name: "Birthdate")
-
+                
                 
                 ReviewRow(x: vm.birthDate.description)
                 
                 FilterHeadSection(name: "National ID Number")
-
+                
                 VStack{
                     
                     ReviewRow(x: vm.NationalIDNumber)
@@ -95,7 +95,7 @@ struct ReviewStageScene: View {
                     ReviewRow(x: vm.uploadFileNameALLOWHealthReport)
                     
                     
-                  
+                    
                     
                 }
             }

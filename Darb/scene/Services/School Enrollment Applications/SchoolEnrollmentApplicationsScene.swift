@@ -7,21 +7,7 @@
 
 import SwiftUI
 
-struct SchoolEnrollmentApplicationsModel:Identifiable {
-    var id = UUID().uuidString
-    var name,secName:String
-    var img = "image 3"
-    var isProceess = true
-}
 
-class SchoolEnrollmentApplicationsViewModel:ObservableObject {
-    @Published var SchoolEnrollmentApplicationsArray:[SchoolEnrollmentApplicationsModel] = [
-        .init(name: "American International School - AISR", secName: "Al Aarid, Riyadh"),
-        .init(name: "American International ", secName: "Al Khuzama, Riyadh"),
-        
-    ]
-    
-}
 
 
 struct SchoolEnrollmentApplicationsScene: View {
@@ -70,72 +56,72 @@ struct SchoolEnrollmentApplicationsScene: View {
                         Circle()
                             .fill(vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)                            .frame(width:30)
                     }
-                        
-                        HStack {
-                            Text("School")
-                                .foregroundColor(Color.black.opacity(0.8))
+                    
+                    HStack {
+                        Text("School")
+                            .foregroundColor(Color.black.opacity(0.8))
                         Spacer()
-                            
-                            Text("Student")
-                                .foregroundColor(Color.black.opacity(0.8))
-                        Spacer()
-                            
-                            Text("Review")
-                                .foregroundColor(Color.black.opacity(0.8))
                         
-                            
-                            
-                        }
-                        .padding(.bottom)
-
-//                        VStack {
-//                            Circle()
-//                                .fill(ColorConstants.servicesTit)
-//                                .frame(width:30)
-//
-//                            Text("School")
-//                                .foregroundColor(Color.black.opacity(0.8))
-//                        }
-//                        VStack {
-//
-//                            RoundedRectangle(cornerRadius: 10)
-//                                .fill(vm.isSecondStage || vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
-//                                .frame(height:5)
-//
-//                            Text("School")
-//                                .foregroundColor( Color.black.opacity(0.0))
-//                        }
-//                        VStack {
-//                            Circle()
-//                                .fill(vm.isSecondStage || vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
-//                                .frame(width:30)
-//                            Text("Student")
-//                                .foregroundColor(Color.black.opacity(0.8))
-//
-//                        }
-//                        VStack {
-//                            RoundedRectangle(cornerRadius: 10)
-//                                .fill(vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
-//                                .frame(height:5)
-//                            Text("Student")
-//                                .foregroundColor(Color.black.opacity(0.0))
-//                        }
-//                        VStack {
-//
-//                            Circle()
-//                                .fill(vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
-//                                .frame(width:30)
-//                            Text("Review")
-//                                .foregroundColor(Color.black.opacity(0.8))
-//
-//                        }
-//                    }
+                        Text("Student")
+                            .foregroundColor(Color.black.opacity(0.8))
+                        Spacer()
+                        
+                        Text("Review")
+                            .foregroundColor(Color.black.opacity(0.8))
+                        
+                        
+                        
+                    }
+                    .padding(.bottom)
+                    
+                    //                        VStack {
+                    //                            Circle()
+                    //                                .fill(ColorConstants.servicesTit)
+                    //                                .frame(width:30)
+                    //
+                    //                            Text("School")
+                    //                                .foregroundColor(Color.black.opacity(0.8))
+                    //                        }
+                    //                        VStack {
+                    //
+                    //                            RoundedRectangle(cornerRadius: 10)
+                    //                                .fill(vm.isSecondStage || vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
+                    //                                .frame(height:5)
+                    //
+                    //                            Text("School")
+                    //                                .foregroundColor( Color.black.opacity(0.0))
+                    //                        }
+                    //                        VStack {
+                    //                            Circle()
+                    //                                .fill(vm.isSecondStage || vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
+                    //                                .frame(width:30)
+                    //                            Text("Student")
+                    //                                .foregroundColor(Color.black.opacity(0.8))
+                    //
+                    //                        }
+                    //                        VStack {
+                    //                            RoundedRectangle(cornerRadius: 10)
+                    //                                .fill(vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
+                    //                                .frame(height:5)
+                    //                            Text("Student")
+                    //                                .foregroundColor(Color.black.opacity(0.0))
+                    //                        }
+                    //                        VStack {
+                    //
+                    //                            Circle()
+                    //                                .fill(vm.isThirdStage ? ColorConstants.servicesTit : ColorConstants.starEmpt)
+                    //                                .frame(width:30)
+                    //                            Text("Review")
+                    //                                .foregroundColor(Color.black.opacity(0.8))
+                    //
+                    //                        }
+                    //                    }
                     
                 }
                 
                 
                 ScrollView(showsIndicators:false) {
-
+                    
                     ZStack {
                         
                         if vm.isFirstStage {
@@ -287,29 +273,29 @@ struct SchoolEnrollmentApplicationsScene: View {
                     }
                 }
                 .frame(height:50)
-//                .padding(.top,20)
+                //                .padding(.top,20)
                 .padding(.bottom,getSafeArea()!.bottom+40)
                 
             }
-//            .padding(.horizontal,8)
-//            .padding(24)
-//            .padding(.top)
-//            .backgroundColor(Color.white)
-//            .clipShape(CustomCorners(corners: [.topLeft,.topRight], width: 32))
-//            
-//            .padding(.top,getSafeArea()?.top)
+            //            .padding(.horizontal,8)
+            //            .padding(24)
+            //            .padding(.top)
+            //            .backgroundColor(Color.white)
+            //            .clipShape(CustomCorners(corners: [.topLeft,.topRight], width: 32))
+            //
+            //            .padding(.top,getSafeArea()?.top)
             
             
         }
         .padding(.horizontal,8)
         
         
-      
-//        .backgroundColor(ColorConstants.servicesTit)
-//        .edgesIgnoringSafeArea(.all)
-//        .navigationBarTitle("")
-//        .navigationBarHidden(true)
-//        .navigationBarBackButtonHidden(true)
+        
+        //        .backgroundColor(ColorConstants.servicesTit)
+        //        .edgesIgnoringSafeArea(.all)
+        //        .navigationBarTitle("")
+        //        .navigationBarHidden(true)
+        //        .navigationBarBackButtonHidden(true)
     }
     
     func getTitle() -> String {

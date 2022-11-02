@@ -10,6 +10,9 @@ struct ContentView: View {
 //        SchoolStage()
         
 //        ListTable()
+//        ChooseLocationScene( isShow: .constant(false))
+//        ChooseLocationScene(isShow: .constant(false))
+
         SHomeTabBar()
     }
 }

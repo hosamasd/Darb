@@ -9,8 +9,11 @@ import SwiftUI
 import GoogleMaps
 import CoreLocation
 
+
 struct GoogleMapView: UIViewRepresentable {
     @State var coordinator = Coordinator()
+    
+    //    @Binding var myLocation:CLLocation
     
     func makeUIView(context _: Context) -> GMSMapView {
         let view = GMSMapView(frame: .zero)
@@ -23,6 +26,7 @@ struct GoogleMapView: UIViewRepresentable {
     func updateUIView(_ uiView: GMSMapView, context _: UIViewRepresentableContext<GoogleMapView>) {}
     
     func makeCoordinator() -> GoogleMapView.Coordinator {
+        
         return coordinator
     }
     
@@ -34,7 +38,27 @@ struct GoogleMapView: UIViewRepresentable {
         override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
             if let location = change?[.newKey] as? CLLocation, let mapView = object as? GMSMapView {
                 mapView.animate(toLocation: location.coordinate)
+                
+                // Save location to UserDefaults
+                //                if let encodedLocation = try? NSKeyedArchiver.archivedData(withRootObject: location, requiringSecureCoding: false) {
+                //                    UserDefaults.standard.set(encodedLocation, forKey: "savedLocation")
+                //                }
+                
+                // or
+                
+                let encodedLocation = NSKeyedArchiver.archivedData(withRootObject: location)
+                UserDefaults.standard.set(encodedLocation, forKey: "savedLocation")
+                
+                // for reterive it
+                
+                //                let previousLocationEncoded = UserDefaults.standard.object(forKey: "savedLocation") as? Data
+                //                let previousLocationDecoded = NSKeyedUnarchiver.unarchiveObject(with: previousLocationEncoded!) as! CLLocation
+                
+                
+                //                self..myLocation=location
+                
             }
+            
         }
     }
 }
@@ -42,6 +66,8 @@ struct GoogleMapView: UIViewRepresentable {
 
 struct Location_Previews: PreviewProvider {
     static var previews: some View {
-        GoogleMapView()
+        //        GoogleMapView()
+        ChooseLocationScene(isShow: .constant(false))
+        
     }
 }

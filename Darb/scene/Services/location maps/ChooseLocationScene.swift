@@ -58,6 +58,20 @@ struct ChooseLocationScene: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+        
+            .onAppear{
+                
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+3){
+                    // Load the last saved location
+                    if let loadedLocation = UserDefaults.standard.data(forKey: "savedLocation"),
+                       let decodedLocation = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(loadedLocation) as? CLLocation {
+                        
+                        print(decodedLocation.coordinate)
+                        // Use the decodedLocation as you want
+                    }
+                }
+                
+            }
 //        GoogleMapView()
     }
 }

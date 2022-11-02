@@ -12,13 +12,13 @@ struct RateView:View {
     var x = ""
     
     var body: some View {
-         
-                Image(x)
-                    
-           
-        }
+        
+        Image(x)
+        
+        
     }
-    
+}
+
 //    func checks(w:Int) -> Bool {
 //        switch w {
 //        case 0 :
@@ -38,7 +38,7 @@ struct RateView:View {
 //    }
 struct CustomRatingView: View {
     @ObservedObject var vm : SchoolExplorerSceneViewModel
-   
+    
     var body: some View {
         VStack{
             
@@ -70,30 +70,30 @@ struct CustomRatingView: View {
                     ForEach(vm.ratingArray,id: \.self){ x  in
                         HStack {
                             Label {
-                               Image(x)
+                                Image(x)
                             } icon: {
                                 Image(systemName: vm.selectedRating==x ? "checkmark.square.fill" :  "square.fill")
                                 
-                                                .foregroundColor(vm.selectedRating != x  ? Color.gray.opacity(0.2 ) : ColorConstants.servicesTit)
+                                    .foregroundColor(vm.selectedRating != x  ? Color.gray.opacity(0.2 ) : ColorConstants.servicesTit)
                             }
-                          
+                            
                             Spacer()
                         }
                         .padding(.horizontal,24)
-                            .onTapGesture {
-                                withAnimation{
-//                                    self.x=x
-                                    vm.count=1
-//                                    vm.count += 1
-//                                    self.vm.filterCount = vm.count == 1 ? vm.filterCount+1 : vm.filterCount
-                                    self.vm.selectedRating=x
-                                    vm.isShowRating.toggle()
-                                }
+                        .onTapGesture {
+                            withAnimation{
+                                //                                    self.x=x
+                                vm.count=1
+                                //                                    vm.count += 1
+                                //                                    self.vm.filterCount = vm.count == 1 ? vm.filterCount+1 : vm.filterCount
+                                self.vm.selectedRating=x
+                                vm.isShowRating.toggle()
                             }
-                    
-                }
-                .padding(.top,4)
-                .padding(.bottom,16)
+                        }
+                        
+                    }
+                    .padding(.top,4)
+                    .padding(.bottom,16)
                     
                 }
                 
@@ -102,7 +102,7 @@ struct CustomRatingView: View {
             
         }
         .addBorder(Color.gray.opacity(0.4), width: 1, cornerRadius: 16)
-
+        
     }
 }
 

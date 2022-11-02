@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabViewImages:View {
     @State var tab = 0
-
+    
     var body: some View {
         
         TabView(selection:$tab) {
@@ -24,46 +24,13 @@ struct TabViewImages:View {
                     .tabItem {
                         
                         Image(tab==i ? "Ellipse 324" : "Ellipse 327")
-
+                        
                     }
                 
-                  
+                
             }
-            
-//            Color.red
-//                .tag(0)
-//                .tabItem {
-//
-//                    Image(tab==0 ? "Ellipse 324" : "Ellipse 327")
-//
-//                }
-//
-//            Color.blue
-//                .tag(1)
-//                .tabItem {
-//
-//                    Image(tab==1 ? "Ellipse 324" : "Ellipse 327")
-//
-//                }
-//
-//            Color.orange
-//                .tag(2)
-//                .tabItem {
-//
-//                    Image(tab==2 ? "Ellipse 324" : "Ellipse 327")
-//
-//                }
-//
-//            Color.green
-//                .tag(3)
-//                .tabItem {
-//
-//                    Image(tab==3 ? "Ellipse 324" : "Ellipse 327")
-////                    Image(systemName: "rectangle.and.pencil.and.ellipsis")
-//
-//                }
         }
-
+        
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
@@ -83,7 +50,7 @@ struct SchoolDetailScene: View {
                 
                 Button {
                     withAnimation{
-                      
+                        
                     }
                 } label: {
                     Image("hambergermenu 1")
@@ -105,21 +72,21 @@ struct SchoolDetailScene: View {
                 .padding(.trailing)
                 
             }
-//            .padding(.bottom)
+            //            .padding(.bottom)
             .padding(.top,getSafeArea()?.top)
             .padding(.bottom,24)
             .padding(.horizontal,24)
             
             VStack{
                 
-               
+                
                 
                 ScrollView(showsIndicators:false) {
                     
                     TabViewImages()
                         .frame(height:250)//getFrameSize().height/3)
                         .cornerRadius(16)
-
+                    
                         .overlay(
                             
                             HStack{
@@ -135,8 +102,8 @@ struct SchoolDetailScene: View {
                                 .padding(.horizontal)
                             ,alignment:.top )
                         .padding(.bottom)
-//                        .padding(.top)
-//                        .padding(.horizontal,-16)
+                    //                        .padding(.top)
+                    //                        .padding(.horizontal,-16)
                     
                     VStack(spacing:16) {
                         
@@ -301,32 +268,32 @@ struct SchoolDetailScene: View {
                 }
                 
             }
-//        .padding(24)
-//            .padding(.horizontal)
-//        .padding(.top)
-        .backgroundColor(Color.white)
-        .clipShape(CustomCorners(corners: [.topLeft,.topRight], width: 32))
-//
-//        .padding(.top,getSafeArea()?.top)
-        
-        //            .padding(.top,40)
-        
-        
-        
-        
-    }
-    .backgroundColor(ColorConstants.servicesTit)
-    .edgesIgnoringSafeArea(.all)
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
-    .navigationBarBackButtonHidden(true)
+            //        .padding(24)
+            //            .padding(.horizontal)
+            //        .padding(.top)
+            .backgroundColor(Color.white)
+            .clipShape(CustomCorners(corners: [.topLeft,.topRight], width: 32))
+            //
+            //        .padding(.top,getSafeArea()?.top)
+            
+            //            .padding(.top,40)
+            
+            
+            
+            
+        }
+        .backgroundColor(ColorConstants.servicesTit)
+        .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 struct LastSection : View {
-//    @ObservedObject var vm :
+    //    @ObservedObject var vm :
     var body: some View{
-       
+        
         VStack {
             
             VStack(spacing:8) {
