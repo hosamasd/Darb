@@ -24,7 +24,7 @@ class MainSerivcesSceneViewModel:ObservableObject {
     @Published var isSchoolExplorer=false
     @Published var isSchoolEnrollment=false
     @Published var isSchoolTrasportationServices=false
-    @Published var isStudentAttendanceRecord=true
+    @Published var isStudentAttendanceRecord=false
 
     var servicesArray:[ServiceRowModel] = [
     
