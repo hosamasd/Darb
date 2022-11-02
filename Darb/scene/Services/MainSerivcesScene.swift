@@ -90,23 +90,24 @@ struct MainSerivcesScene: View {
                                 .padding(.bottom)
                                 .padding(.top,-8)
                             
-                            
-                            VStack {
-                                
-                                ForEach(vm.servicesArray,id: \.id) { x  in
-                                    ServiceRow(x: x)
-                                        .padding(.vertical,12)
-                                        .onTapGesture {
-                                            withAnimation{
-                                                checks(x:x)
+                            ScrollView(isSmallDevice() ? .vertical : .init() ,showsIndicators:false){
+                                VStack {
+                                    
+                                    ForEach(vm.servicesArray,id: \.id) { x  in
+                                        ServiceRow(x: x)
+                                            .padding(.vertical,12)
+                                            .onTapGesture {
+                                                withAnimation{
+                                                    checks(x:x)
+                                                }
                                             }
-                                        }
+                                        
+                                    }
+                                    
                                     
                                 }
-                                
-                                
                             }
-                            
+                            .padding(.bottom,isSmallDevice() ? 30 : 0)
                             Spacer()
                         }
                         .padding(.horizontal,8)
@@ -116,12 +117,15 @@ struct MainSerivcesScene: View {
                 }
             }
             .padding(24)
-            .padding(.top)
+            
+            .padding(.top)//,isSmallDevice() ? 0 : 8)
             .backgroundColor(Color.white)
             .clipShape(CustomCorners(corners: [.topLeft,.topRight], width: 32))
             
             .padding(.top,getSafeArea()?.top)
-            
+//            .offset(y:isSmallDevice() ? 16 : 0)
+            .padding(.top,isSmallDevice() ? 16 : 0)
+
             //            .padding(.top,40)
             
             

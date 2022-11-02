@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0D13A529127C5900F75B06 /* ListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D13A429127C5900F75B06 /* ListTable.swift */; };
 		4E27D660291167C5003798D4 /* FiveStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D65F291167C5003798D4 /* FiveStarView.swift */; };
 		4E27D66429116A4D003798D4 /* SchoolStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D66329116A4D003798D4 /* SchoolStage.swift */; };
 		4E34206529112F9100B6F0C7 /* SchoolEnrollmentApplicationsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		2CEA4160D7851E6BEA340DE5 /* Pods-Darb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darb.release.xcconfig"; path = "Target Support Files/Pods-Darb/Pods-Darb.release.xcconfig"; sourceTree = "<group>"; };
 		49AA7AD9E03E7718CA85D0EA /* Pods_Darb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Darb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0D13A429127C5900F75B06 /* ListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTable.swift; sourceTree = "<group>"; };
 		4E27D65F291167C5003798D4 /* FiveStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarView.swift; sourceTree = "<group>"; };
 		4E27D66329116A4D003798D4 /* SchoolStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolStage.swift; sourceTree = "<group>"; };
 		4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEnrollmentApplicationsScene.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 				49AA7AD9E03E7718CA85D0EA /* Pods_Darb.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E0D13A329127C4200F75B06 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				4E0D13A429127C5900F75B06 /* ListTable.swift */,
+			);
+			path = table;
 			sourceTree = "<group>";
 		};
 		4E27D66129116A32003798D4 /* School Stage */ = {
@@ -394,6 +404,7 @@
 				4E3676342910B855004D8BC8 /* school */,
 				4EAE132929102F2200141181 /* MainSerivcesScene.swift */,
 				4E395A592911554C00EB1A12 /* StudentAttendanceRecordScene.swift */,
+				4E0D13A329127C4200F75B06 /* table */,
 				4E3C1592291175F70030ACE9 /* location maps */,
 			);
 			path = Services;
@@ -537,6 +548,7 @@
 			files = (
 				4E92C37E29123363008E7450 /* SecondChooseLocationScene.swift in Sources */,
 				4E48205C29110BCE007FC403 /* SliderRange.swift in Sources */,
+				4E0D13A529127C5900F75B06 /* ListTable.swift in Sources */,
 				4E4DB9DB29113EDB0069F334 /* SliderValue.swift in Sources */,
 				4E3C1591291175F50030ACE9 /* Location.swift in Sources */,
 				4E3C1595291177230030ACE9 /* SHomeTabBar.swift in Sources */,

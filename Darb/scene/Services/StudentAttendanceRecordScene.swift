@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StudentAttendanceRecordScene: View {
+    @StateObject var vm = StudentAttendanceRecordSceneViewModel()
     var body: some View {
         ScrollView(isSmallDevice() ? .vertical : .init(),showsIndicators:false){
             VStack{
@@ -24,127 +25,94 @@ struct StudentAttendanceRecordScene: View {
                     .padding(.bottom)
                     .padding(.top,-8)
                 
-                VStack{
-                    
-                    HStack {
-                        Text("Student Information")
-                            .font(.system(size: 16))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.leading)
-                        Spacer()
-                    }
-                    .padding(.bottom)
-                    
-                    VStack(spacing:8){
-                        HStack{
-                            
-                            HStack(spacing:0) {
-                                Text("Student Name:")
-                                    .font(.system(size: 15))
-                                    .fontWeight(.bold)
-                                
-                                Text("Sarah Smith")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(ColorConstants.subTtitle2)
-                            }
+                ScrollView(showsIndicators:false) {
+                    VStack{
+                        
+                        
+                        HStack {
+                            Text("Student Information")
+                                .font(.system(size: 16))
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.leading)
                             Spacer()
-                            
                         }
+                        .padding(.bottom)
                         
-                        HStack{
-                            
-                            HStack(spacing:0) {
-                                Text("Grade:")
-                                    .font(.system(size: 15))
+                        VStack(spacing:8){
+                            HStack{
                                 
-                                    .fontWeight(.bold)
+                                HStack(spacing:0) {
+                                    Text("Student Name:")
+                                        .font(.system(size: 15))
+                                        .fontWeight(.bold)
+                                    
+                                    Text("Sarah Smith")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(ColorConstants.subTtitle2)
+                                }
+                                Spacer()
                                 
-                                Text(" 5th grade")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(ColorConstants.subTtitle2)
                             }
-                            Spacer()
                             
-                        }
-                        HStack{
-                            
-                            HStack(spacing:0) {
-                                Text("Section :")
-                                    .font(.system(size: 15))
+                            HStack{
                                 
-                                    .fontWeight(.bold)
+                                HStack(spacing:0) {
+                                    Text("Grade:")
+                                        .font(.system(size: 15))
+                                    
+                                        .fontWeight(.bold)
+                                    
+                                    Text(" 5th grade")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(ColorConstants.subTtitle2)
+                                }
+                                Spacer()
                                 
-                                Text("A")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(ColorConstants.subTtitle2)
                             }
-                            Spacer()
-                            
+                            HStack{
+                                
+                                HStack(spacing:0) {
+                                    Text("Section :")
+                                        .font(.system(size: 15))
+                                    
+                                        .fontWeight(.bold)
+                                    
+                                    Text("A")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(ColorConstants.subTtitle2)
+                                }
+                                Spacer()
+                                
+                            }
                         }
-                    }
-                    .padding(.horizontal)
-                    
-                    HStack {
-                        Text("Absences and Late")
-                            .font(.system(size: 16))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.leading)
-                        Spacer()
-                    }
-                    .padding(.top)
-                    
-                    //table
-                    HStack {
-                        Text("Subject")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
-                        Text("Absences")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
+                        .padding(.horizontal)
                         
-                        Text("Late")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
+                        HStack {
+                            Text("Absences and Late")
+                                .font(.system(size: 16))
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                        }
+                        .padding(.top)
                         
-                        Text("%")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
                         
+                        ListTable( vm: vm)
+                            .padding(.bottom,80)
+                        
+                        //table
+                        
+                        //                    .padding()
+                        
+                        Spacer()
                     }
-                    .padding()
-                    .backgroundColor(ColorConstants.topTable)
-                    
-                    HStack {
-                        Text("Science")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
-                        Divider()
-                            .frame(height:20)
-//                        Spacer()
-                        Text("1")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
-                        Divider()
-                            .frame(height:40)
-                        Text("0")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
-//                        Divider()
-//                            .frame(height:20)
-                        Text("5%")
-                            .foregroundColor(ColorConstants.subTtitle2)
-                        Spacer()
-                        
-                    }
-//                    .padding()
-                    
-                    Spacer()
                 }
+                
                 
             }
         }
         .padding(.horizontal,8)
-
+        
     }
 }
 
@@ -153,3 +121,46 @@ struct StudentAttendanceRecordScene_Previews: PreviewProvider {
         StudentAttendanceRecordScene()
     }
 }
+
+//HStack {
+//    Text("Subject")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+//    Text("Absences")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+//    
+//    Text("Late")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+//    
+//    Text("%")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+//    
+//}
+//.padding()
+//.backgroundColor(ColorConstants.topTable)
+//
+//HStack {
+//    Text("Science")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+//    Divider()
+//        .frame(height:20)
+////                        Spacer()
+//    Text("1")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+//    Divider()
+//        .frame(height:40)
+//    Text("0")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+////                        Divider()
+////                            .frame(height:20)
+//    Text("5%")
+//        .foregroundColor(ColorConstants.subTtitle2)
+//    Spacer()
+//    
+//}

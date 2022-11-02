@@ -187,6 +187,9 @@ struct SchoolFilterScene: View {
             
             .padding(.top,getSafeArea()?.top)
             
+            
+            .padding(.top,isSmallDevice() ? 16 : 0)
+
             //            .padding(.top,40)
             
             

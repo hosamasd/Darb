@@ -9,20 +9,22 @@ import SwiftUI
 
 class SchoolTransportionServicesSceneiewModel:ObservableObject {
     @Published var SchoolTransportionServicesSceneiewArray:[SchoolTransportionServicesSceneModel] = [
-        .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh"),
-        .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh"),
-        .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh")
+//        .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh"),
+//        .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh"),
+//        .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh")
         
     ]
     @Published var studentName=""
     @Published var studentGrad=""
     @Published var studentLocation=""
 
+    @Published var isCreateNewwAPP=true
+
     @Published var isShowMaps=false
 }
 
 struct SchoolSubmitApplication: View {
-    @StateObject var vm = SchoolTransportionServicesSceneiewModel()
+    @ObservedObject var vm : SchoolTransportionServicesSceneiewModel
 
     var body: some View {
         VStack {
@@ -62,7 +64,7 @@ struct SchoolSubmitApplication: View {
                         .padding(.leading)
                     Spacer()
                     Button {
-                        
+                        withAnimation{vm.isShowMaps.toggle()}
                     } label: {
                         
                         Label {
@@ -101,6 +103,6 @@ struct SchoolSubmitApplication: View {
 
 struct SchoolSubmitApplication_Previews: PreviewProvider {
     static var previews: some View {
-        SchoolSubmitApplication()
+        SchoolSubmitApplication(vm: SchoolTransportionServicesSceneiewModel())
     }
 }

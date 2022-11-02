@@ -42,39 +42,49 @@ struct SchoolTransportionServicesScene: View {
             
             ScrollView(showsIndicators:false) {
                 
-                
-                
-                VStack{
+                ZStack {
                     
-                    ZStack{
-                        //empty array
+                    if vm.isCreateNewwAPP {
+                        SchoolSubmitApplication(vm:vm)
+                            .transition(.move(edge: .leading))
                         
-                        if vm.SchoolTransportionServicesSceneiewArray.count == 0 {
+                    }
+                    else {
+                        
+                        VStack{
                             
-                            VStack{
+                            ZStack{
+                                //empty array
                                 
-                                Text("No School Tranportation Sevices Registered.")
-                                    .font(.system(size: 12))
-                                    .foregroundColor(ColorConstants.subTtitle2)
-                                
-                                Spacer()
-                            }
-                            .padding(.top,20)
-                            
-                        }else {
-                            
-                            LazyVGrid(columns: columnss, spacing: 20) {
-                                
-                                ForEach(vm.SchoolTransportionServicesSceneiewArray) { x in
-                                    SchoolTransportionServicesRowView(x: x)
+                                if vm.SchoolTransportionServicesSceneiewArray.count == 0 {
+                                    
+                                    VStack{
+                                        
+                                        Text("No School Tranportation Sevices Registered.")
+                                            .font(.system(size: 12))
+                                            .foregroundColor(ColorConstants.subTtitle2)
+                                        
+                                        Spacer()
+                                    }
+                                    .padding(.top,20)
+                                    
+                                }else {
+                                    
+                                    LazyVGrid(columns: columnss, spacing: 20) {
+                                        
+                                        ForEach(vm.SchoolTransportionServicesSceneiewArray) { x in
+                                            SchoolTransportionServicesRowView(x: x)
+                                        }
+                                        
+                                    }
                                 }
-                                
                             }
+                            
                         }
+                        .transition(.move(edge: .leading))
                     }
                     
                 }
-                
                 Spacer()
             }
             .padding(.vertical)
@@ -82,25 +92,84 @@ struct SchoolTransportionServicesScene: View {
             //            .padding(.top,40)
             
             
-            RoundedRectangle(cornerRadius: 12)
-                .fill(ColorConstants.servicesTit)
-                .overlay(
-                    Label(title: {
-                        Text("New Application")
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                    }, icon: {
-                        Image("addcircle")
+            ZStack {
+                
+                if !vm.isCreateNewwAPP {
+                    
+                    Button {
+                        withAnimation{vm.isCreateNewwAPP.toggle()}
+                    } label: {
                         
-                    })
-                )
-                .frame(height:50)
-//                .padding(.bottom,40)
-                .padding(.bottom,getSafeArea()!.bottom+40)
-
+                        
+                        
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(ColorConstants.servicesTit)
+                            .overlay(
+                                Label(title: {
+                                    Text("New Application")
+                                        .font(.system(size: 20))
+                                        .foregroundColor(Color.white)
+                                }, icon: {
+                                    Image("addcircle")
+                                    
+                                })
+                            )
+                        
+                    }
+                    
+                    
+                }else {
+                    
+                    
+                    
+                    
+                    Button {
+                        withAnimation{
+                            addApp()
+                            vm.isCreateNewwAPP.toggle()
+                            //                            vm.isFirstStage=true
+                        }
+                    } label: {
+                        
+                        
+                        
+                        
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(ColorConstants.servicesTit)
+                            .overlay(
+                                Label(title: {
+                                    Text("Submit Application")
+                                        .font(.system(size: 20))
+                                        .foregroundColor(Color.white)
+                                }, icon: {
+                                    Image("addcircle")
+                                    
+                                })
+                            )
+                    }
+                    .transition(.move(edge: .leading))
+                    
+                }
+                
+                
+            }
+            
+            .frame(height:50)
+            //                .padding(.bottom,40)
+            .padding(.bottom,getSafeArea()!.bottom+40)
+            
             
         }
         .padding(.horizontal,8)
+    }
+    
+    func addApp()  {
+        self.vm.SchoolTransportionServicesSceneiewArray =
+        [
+            .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh"),
+            .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh"),
+            .init(name: "American International School - AISR", forI: " Sarah Smith", from: " King Fahd, Riyadh", to: " Al Aarid, Riyadh")
+        ]
     }
 }
 

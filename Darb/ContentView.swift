@@ -9,7 +9,7 @@ struct ContentView: View {
        
 //        SchoolStage()
         
-        
+//        ListTable()
         SHomeTabBar()
     }
 }
