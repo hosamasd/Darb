@@ -204,11 +204,11 @@ struct SchoolEnrollmentApplicationsScene: View {
                         Button {
                             withAnimation{
                                 if vm.isFirstStage {
-                                    if  !checkFirst() {   vm.isSecondStage=true
+                                    if  checkFirst() {   vm.isSecondStage=true
                                         vm.isFirstStage = false
                                     } else {()}
                                 }else  if vm.isSecondStage {
-                                    if  !checkSecond() {   vm.isThirdStage = true
+                                    if  checkSecond() {   vm.isThirdStage = true
                                         vm.isSecondStage = false
                                     } else {()}
                                 }else {

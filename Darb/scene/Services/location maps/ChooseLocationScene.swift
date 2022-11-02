@@ -51,7 +51,7 @@ struct ChooseLocationScene: View {
                     .addBorder(Color.gray.opacity(0.4), width: 1, cornerRadius: 16)
                 }
                     .padding()
-                    .padding(.top)
+                    .padding(.top,60)
                 ,alignment: .top)
         
             .edgesIgnoringSafeArea(.all)

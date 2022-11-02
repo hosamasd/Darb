@@ -18,7 +18,7 @@ class SchoolTransportionServicesSceneiewModel:ObservableObject {
     @Published var studentGrad=""
     @Published var studentLocation=""
 
-    @Published var isCreateNewwAPP=true
+    @Published var isCreateNewwAPP=false
 
     @Published var isShowMaps=false
 }
@@ -30,6 +30,7 @@ struct SchoolSubmitApplication: View {
         VStack {
         
             FilterSection(name: "STUDENT INFORMATION")
+                .padding(.vertical)
 
             FilterHeadSection(name: "Student Name")
 
@@ -54,7 +55,8 @@ struct SchoolSubmitApplication: View {
             .addBorder(Color.gray.opacity(0.4), width: 1, cornerRadius: 16)
 
             FilterSection(name: "TRANSPORTATION INFORMATION")
-
+                .padding(.vertical)
+            
             FilterHeadSection(name: "Home Location")
 
             VStack {
