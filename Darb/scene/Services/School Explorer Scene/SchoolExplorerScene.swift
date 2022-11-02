@@ -39,7 +39,7 @@ struct SchoolExplorerScene: View {
                     
                     HStack {
                         Text("The School Exolorer")
-                            .font(.system(size: 30))
+                            .font(.system(size: 20))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.leading)
                         Spacer()

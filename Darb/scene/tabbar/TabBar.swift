@@ -109,15 +109,6 @@ struct TabBar:View {
         .background(Color.white)
         .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
         
-       
-      
-//        .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: 5)
-
-       
-
-        //        .shadow(color: Color.gray.opacity(0.6), radius: 3)
-//        .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
-
         
         
     }

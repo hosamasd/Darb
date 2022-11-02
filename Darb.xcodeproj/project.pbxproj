@@ -47,7 +47,6 @@
 		4E9E458B29117C1D00715A7D /* UploadBirthCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */; };
 		4E9E458E291180B300715A7D /* UploadPortraitPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458D291180B300715A7D /* UploadPortraitPhoto.swift */; };
 		4E9E4590291180C100715A7D /* UploadHealthReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458F291180C100715A7D /* UploadHealthReport.swift */; };
-		4EAE1317291023FC00141181 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE1316291023FC00141181 /* AppHelper.swift */; };
 		4EAE13192910240B00141181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE13182910240B00141181 /* AppDelegate.swift */; };
 		4EAE131C2910244800141181 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE131B2910244800141181 /* hideKeyboard.swift */; };
 		4EAE13252910280900141181 /* EX_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE13242910280900141181 /* EX_View.swift */; };
@@ -101,7 +100,6 @@
 		4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadBirthCertificate.swift; sourceTree = "<group>"; };
 		4E9E458D291180B300715A7D /* UploadPortraitPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPortraitPhoto.swift; sourceTree = "<group>"; };
 		4E9E458F291180C100715A7D /* UploadHealthReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadHealthReport.swift; sourceTree = "<group>"; };
-		4EAE1316291023FC00141181 /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		4EAE13182910240B00141181 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EAE131B2910244800141181 /* hideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
 		4EAE13242910280900141181 /* EX_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EX_View.swift; sourceTree = "<group>"; };
@@ -338,7 +336,6 @@
 			isa = PBXGroup;
 			children = (
 				4EAE13182910240B00141181 /* AppDelegate.swift */,
-				4EAE1316291023FC00141181 /* AppHelper.swift */,
 				4E36762B2910ADAF004D8BC8 /* ColorConstants.swift */,
 			);
 			name = helpers;
@@ -589,7 +586,6 @@
 				4E2D28402912AF7B00A2AC7B /* SchoolEnrollmentApplicationsViewModel.swift in Sources */,
 				4E36762C2910ADAF004D8BC8 /* ColorConstants.swift in Sources */,
 				4E3676332910B3A0004D8BC8 /* CustomCorners.swift in Sources */,
-				4EAE1317291023FC00141181 /* AppHelper.swift in Sources */,
 				4E3632C82910CBF300B37270 /* FilterSection.swift in Sources */,
 				4E4DB9D429113B420069F334 /* SchoolTransportionServicesScene.swift in Sources */,
 				4E48205E29111079007FC403 /* SchoolExplorerSceneViewModel.swift in Sources */,
