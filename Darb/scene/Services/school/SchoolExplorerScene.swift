@@ -28,95 +28,143 @@ struct SchoolExplorerScene: View {
     @State var columnss = Array(repeating: GridItem(.flexible(), spacing: 12), count: 1)//12
 
     var body: some View {
-        VStack{
-            
-            HStack {
-                Text("The School Exolorer")
-                    .font(.system(size: 30))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.leading)
-                Spacer()
-                
-                Button {
-                    withAnimation{
-                        
-                    }
-                } label: {
-                    Label {
-                        
-                        Text("Maps")
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.white)
-                    } icon: {
-                        
-                        Image("Vector 1")
-                    }
+//        ZStack {
+//
+//            if vm.isShowSelectedSchool {
+//                SchoolDetailScene(vm: vm)
+//                    .transition(.move(edge: .leading))
+//            }
+//            else {
+                VStack{
                     
-                }
-                .padding(12)
-                .backgroundColor(ColorConstants.servicesTit)
-                .cornerRadius(12)
-                
-            }
-            
-            HStack{
-                
-                Image("hugeIconInterfaceOutlineSearch02")
-                
-                TextField("enter search txt", text: $vm.searchTxt)
-                    .padding(.horizontal,6)
-                Spacer()
-                
-                HStack{
-                    
-                    Divider()
-                    
-                    Button {
-                        withAnimation{
+                    HStack {
+                        Text("The School Exolorer")
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                        Spacer()
+                        
+                        Button {
+                            withAnimation{
+                                vm.isShowMaps.toggle()
+                            }
+                        } label: {
+                            Label {
+                                
+                                Text("Maps")
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(Color.white)
+                            } icon: {
+                                
+                                Image("Vector 1")
+                            }
                             
                         }
-                    } label: {
-                        Image("cocoLineSetting")
+                        .padding(12)
+                        .backgroundColor(ColorConstants.servicesTit)
+                        .cornerRadius(12)
                         
                     }
                     
-                    Text("2")
-                        .fontWeight(.semibold)
-                    
-                }
-            }
-            .padding(.horizontal)
-            .frame(height:50)
-            .addBorder(Color.gray.opacity(0.4), width: 1, cornerRadius: 16)
-            
-            
-            // The actual days of the month.
-            
-            ScrollView {
-                
-            
-            
-            VStack{
-                
-                LazyVGrid(columns: columnss, spacing: 20) {
-                    
-                    //            HStack {
-                    ForEach(fetchArray()) { index in
-                        SchoolRow(x:index)
+                    HStack{
+                        
+                        Image("hugeIconInterfaceOutlineSearch02")
+                        
+                        TextField("enter search txt", text: $vm.searchTxt)
+                            .padding(.horizontal,6)
+                        Spacer()
+                        
+                        HStack{
+                            
+                            Divider()
+                            
+                            Button {
+                                withAnimation{
+                                    
+                                }
+                            } label: {
+                                Image("cocoLineSetting")
+                                    .onTapGesture {
+                                        withAnimation{vm.isShowFilter.toggle()}
+                                    }
+                            }
+                            
+                            Text("\(vm.filterCount)")
+                                .fontWeight(.semibold)
+                            
+                        }
                     }
-                    //            }
-                }
-                
-            }
-                
-            }
-            
+                    .padding(.horizontal)
+                    .frame(height:50)
+                    .addBorder(Color.gray.opacity(0.4), width: 1, cornerRadius: 16)
+                    
+                    
+                    // The actual days of the month.
+                    
+                    ScrollView(showsIndicators:false) {
+                        
+                        
+                        
+                        VStack{
+                            
+                            LazyVGrid(columns: columnss, spacing: 20) {
+                                
+                                //            HStack {
+                                ForEach(fetchArray()) { index in
+                                    SchoolRow(x:index)
+                                        .onTapGesture {
+                                            withAnimation{
+                                                vm.selectedSchool=index
+                                                vm.isShowSelectedSchool.toggle()
+                                                
+                                            }
+                                        }
+                                }
+                                //            }
+                            }
+                            
+                        }
+                        .padding(.bottom)
+                        
+                    }
+                    .padding(.bottom,80)
+                    
+//                }
+//                .transition(.move(edge: .trailing))
+//
+//            }
+//
         }
-        .padding(.horizontal,24)
+        .padding(.horizontal,8)
+        
+        .background(EmptyView()
+            .fullScreenCover(isPresented: $vm.isShowFilter, content: {
+                SchoolFilterScene(vm:vm)
+
+            })
+                    )
+        
+        .background(EmptyView()
+            .fullScreenCover(isPresented: $vm.isShowMaps, content: {
+                SecondChooseLocationScene(isShow: $vm.isShowMaps,isShowSelectedSchool: $vm.isShowSelectedSchool)
+//                SchoolFilterScene(vm:vm)
+
+            })
+                    )
+        .background(EmptyView()
+            .fullScreenCover(isPresented: $vm.isShowSelectedSchool, content: {
+                SchoolDetailScene(vm: vm)
+//                SchoolFilterScene(vm:vm)
+
+            })
+                    )
+        
+        
+
     }
     
     func fetchArray() -> [SchoolModel] {
-        vm.searchTxt=="" ? vm.schoolArrays : vm.schoolArrays.filter{$0.name.lowercased().contains(vm.searchTxt)}
+        vm.searchTxt=="" ? vm.schoolArrays : vm.schoolArrays.filter{$0.name.lowercased().contains(vm.searchTxt.lowercased())}
     }
 }
 

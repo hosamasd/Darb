@@ -20,9 +20,20 @@ class SchoolExplorerSceneViewModel: ObservableObject {
         
             .init(name: "gmerican International", secName: " School - AISR", place: "Al Aarid, Riyadh", rating: 4.5, reviews: 385),
     ]
-    
+    @Published var selectedSchool=SchoolModel(name: "wmerican International", secName: " School - AISR", place: "Al Aarid, Riyadh", rating: 4.5, reviews: 385)
+    @Published var isShowSelectedSchool=false
+
     //filter
-    
+    @Published var isShowFilter=false
+    @Published var isShowMaps=false
+
+    //count
+@Published var filterCount=1
+    @Published var countGrade=0
+    @Published var countCurricum=0
+    @Published var count=0
+    @Published var rangeCount=0
+
     @Published var isMale=true
     
     @Published var isstudentAcademicLevelsShow=false

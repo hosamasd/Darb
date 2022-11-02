@@ -9,80 +9,121 @@ import SwiftUI
 
 struct MainSerivcesScene: View {
     @StateObject var vm = MainSerivcesSceneViewModel()
-
+    
     var body: some View {
         VStack{
             
             VStack{
                 
-            HStack{
-                
-                Button {
-                    withAnimation{
-                        
-                    }
-                } label: {
-                    Image("hambergermenu")
-                        .foregroundColor(.black)
-                }
-
-                Spacer()
-                
-                Button {
-                    withAnimation{
-                        
-                    }
-                } label: {
-                    Image("darb logo 1")
-                        .resizable()
-                        .frame(width: 50,height: 50)
-                        .foregroundColor(.black)
-                }
-                .padding(.trailing)
-                
-            }
-            .padding(.bottom,24)
-            
-                VStack{
+                HStack{
                     
-                    HStack {
-                        Text("Services")
-                            .font(.system(size: 30))
-                            .fontWeight(.bold)
-                            .foregroundColor(ColorConstants.servicesTit)
-                            .multilineTextAlignment(.leading)
-                        Spacer()
-                    }
-                    
-                    Divider()
-                        .padding(.bottom)
-                        .padding(.top,-8)
-                    
-                    
-                    VStack {
-                        
-                        ForEach(vm.servicesArray,id: \.id) { x  in
-                            ServiceRow(x: x)
-                                .padding(.vertical,12)
-                            
+                    Button {
+                        withAnimation{
+                            if vm.isSchoolExplorer {
+                                vm.isSchoolExplorer=false
+                            }else if vm.isSchoolEnrollment {
+                                vm.isSchoolEnrollment=false
+                            }else if vm.isSchoolTrasportationServices {
+                                vm.isSchoolTrasportationServices=false
+                            }else if vm.isStudentAttendanceRecord {
+                                vm.isStudentAttendanceRecord=false
+                            }
                         }
-                        
-                        
+                    } label: {
+                        Image("hambergermenu")
+                            .foregroundColor(.black)
                     }
                     
                     Spacer()
+                    
+                    Button {
+                        withAnimation{
+                            
+                        }
+                    } label: {
+                        Image("darb logo 1")
+                            .resizable()
+                            .frame(width: 50,height: 50)
+                            .foregroundColor(.black)
+                    }
+                    .padding(.trailing)
+                    
                 }
-                .padding(.horizontal,8)
+                .padding(.bottom,24)
+                
+                ZStack {
+                    
+                    if vm.isSchoolExplorer {
+                        SchoolExplorerScene()
+                            .transition(.move(edge: .top))
+                    }
+                   else if vm.isSchoolEnrollment {
+                        SchoolEnrollmentApplicationsScene()
+                            .transition(.move(edge: .bottom))
+                    }
+                    else  if vm.isSchoolTrasportationServices {
+                        SchoolTransportionServicesScene()
+                            .transition(.move(edge: .trailing))
+                    }
+                    else  if vm.isStudentAttendanceRecord {
+                        StudentAttendanceRecordScene()
+                            .padding(.top)
+                            .transition(.move(edge: .top))
+                    }
+                    else {
+                        
+                        
+                        
+                        
+                        VStack{
+                            
+                            HStack {
+                                Text("Services")
+                                    .font(.system(size: 30))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(ColorConstants.servicesTit)
+                                    .multilineTextAlignment(.leading)
+                                Spacer()
+                            }
+                            
+                            Divider()
+                                .padding(.bottom)
+                                .padding(.top,-8)
+                            
+                            
+                            VStack {
+                                
+                                ForEach(vm.servicesArray,id: \.id) { x  in
+                                    ServiceRow(x: x)
+                                        .padding(.vertical,12)
+                                        .onTapGesture {
+                                            withAnimation{
+                                                checks(x:x)
+                                            }
+                                        }
+                                    
+                                }
+                                
+                                
+                            }
+                            
+                            Spacer()
+                        }
+                        .padding(.horizontal,8)
+                        
+                    }
+                    
+                }
             }
             .padding(24)
             .padding(.top)
             .backgroundColor(Color.white)
             .clipShape(CustomCorners(corners: [.topLeft,.topRight], width: 32))
-
+            
             .padding(.top,getSafeArea()?.top)
-
-//            .padding(.top,40)
-
+            
+            //            .padding(.top,40)
+            
             
             
             
@@ -93,6 +134,19 @@ struct MainSerivcesScene: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         
+    }
+    
+    func checks(x:ServiceRowModel)  {
+        switch x.id {
+        case 0:
+            vm.isSchoolExplorer.toggle()
+        case 1:
+            vm.isSchoolEnrollment.toggle()
+        case 2:
+            vm.isSchoolTrasportationServices.toggle()
+        default:
+            vm.isStudentAttendanceRecord.toggle()
+        }
     }
 }
 

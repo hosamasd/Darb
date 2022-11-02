@@ -101,6 +101,6 @@ struct RangedSliderView: View {
 
 struct SchoolFilterScsene_Previews: PreviewProvider {
     static var previews: some View {
-        SchoolFilterScene()
+        SchoolFilterScene(vm: SchoolExplorerSceneViewModel())
     }
 }

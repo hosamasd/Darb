@@ -40,24 +40,44 @@ struct SchoolTransportionServicesScene: View {
             
             
             
-            ScrollView {
+            ScrollView(showsIndicators:false) {
                 
                 
                 
                 VStack{
                     
-                    LazyVGrid(columns: columnss, spacing: 20) {
+                    ZStack{
+                        //empty array
                         
-                        ForEach(vm.SchoolTransportionServicesSceneiewArray) { x in
-                            SchoolTransportionServicesRowView(x: x)
+                        if vm.SchoolTransportionServicesSceneiewArray.count == 0 {
+                            
+                            VStack{
+                                
+                                Text("No School Tranportation Sevices Registered.")
+                                    .font(.system(size: 12))
+                                    .foregroundColor(ColorConstants.subTtitle2)
+                                
+                                Spacer()
+                            }
+                            .padding(.top,20)
+                            
+                        }else {
+                            
+                            LazyVGrid(columns: columnss, spacing: 20) {
+                                
+                                ForEach(vm.SchoolTransportionServicesSceneiewArray) { x in
+                                    SchoolTransportionServicesRowView(x: x)
+                                }
+                                
+                            }
                         }
-                        
                     }
                     
                 }
                 
                 Spacer()
             }
+            .padding(.vertical)
             
             //            .padding(.top,40)
             
@@ -75,11 +95,12 @@ struct SchoolTransportionServicesScene: View {
                     })
                 )
                 .frame(height:50)
-                .padding(.bottom,40)
-            
+//                .padding(.bottom,40)
+                .padding(.bottom,getSafeArea()!.bottom+40)
+
             
         }
-        
+        .padding(.horizontal,8)
     }
 }
 

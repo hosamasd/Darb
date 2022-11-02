@@ -67,11 +67,11 @@ struct UploadBirthCertificate: View {
 
 
 
-struct SchoolStsage_Previews: PreviewProvider {
-    static var previews: some View {
-        SchoolStage()
-    }
-}
+//struct SchoolStsage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SchoolStage()
+//    }
+//}
 
 
 

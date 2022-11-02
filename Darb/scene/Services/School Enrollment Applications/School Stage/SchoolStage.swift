@@ -9,54 +9,11 @@ import SwiftUI
 
 struct SchoolStage: View {
     
-    @StateObject var vm=SchoolStageViewModel()
+    @ObservedObject var vm:SchoolStageViewModel
     
     var body: some View {
         VStack {
             
-            HStack(spacing:-13) {
-                VStack {
-                    Circle()
-                        .fill(ColorConstants.servicesTit)
-                        .frame(width:30)
-                    
-                    Text("School")
-                        .foregroundColor(Color.black.opacity(0.8))
-                }
-                VStack {
-                    
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(ColorConstants.starEmpt)
-                        .frame(height:5)
-                    
-                    Text("Student")
-                        .foregroundColor(Color.black.opacity(0.0))
-                }
-                VStack {
-                    Circle()
-                        .fill(ColorConstants.servicesTit)
-                        .frame(width:30)
-                    Text("Student")
-                        .foregroundColor(Color.black.opacity(0.8))
-                    
-                }
-                VStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(ColorConstants.starEmpt)
-                        .frame(height:5)
-                    Text("School")
-                        .foregroundColor(Color.black.opacity(0.0))
-                }
-                VStack {
-                    
-                    Circle()
-                        .fill(ColorConstants.servicesTit)
-                        .frame(width:30)
-                    Text("Review")
-                        .foregroundColor(Color.black.opacity(0.8))
-                    
-                }
-            }
             
             VStack(spacing:16) {
                 
@@ -66,20 +23,30 @@ struct SchoolStage: View {
                 
                 FilterHeadSection(name: "School Curriculum")
                 
-                Custom(x: $vm.selectedSchoolName, isSchoolCurriculumShow: $vm.isShowSchoolName, SchoolCurriculumArray: $vm.SchoolCurriculumArray)
+                Custom(x: $vm.selectedSchoolCurriculum, isSchoolCurriculumShow: $vm.isShowSchoolCurriculum, SchoolCurriculumArray: $vm.SchoolCurriculumArray)
                 
                 FilterHeadSection(name: "School Education Level ")
                 
                 Custom(x: $vm.selectedSchoolEducation, isSchoolCurriculumShow: $vm.isShowSchoolEducation, SchoolCurriculumArray: $vm.SchoolEducationArray)
                 
-                UploadBirthCertificate(vm: vm)
+//                UploadBirthCertificate(vm: vm)
             }
+        }
+        
+        .onChange(of: vm.selectedSchoolName.id) { newValue in
+            print(newValue)
+        }
+        .onChange(of: vm.selectedSchoolCurriculum.id) { newValue in
+            print(newValue)
+        }
+        .onChange(of: vm.selectedSchoolEducation.id) { newValue in
+            print(newValue)
         }
     }
 }
 
-struct SchoolStage_Previews: PreviewProvider {
-    static var previews: some View {
-        SchoolStage()
-    }
-}
+//struct SchoolStage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SchoolStage()
+//    }
+//}

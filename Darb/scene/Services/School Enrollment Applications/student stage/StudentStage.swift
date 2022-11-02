@@ -10,6 +10,12 @@ import SwiftUI
 
 class SchoolStageViewModel: ObservableObject {
     
+    @Published var SchoolEnrollmentApplicationsArray:[SchoolEnrollmentApplicationsModel] = [
+        .init(name: "American International School - AISR", secName: "Al Aarid, Riyadh"),
+        .init(name: "American International ", secName: "Al Khuzama, Riyadh"),
+        
+    ]
+    
     //SchoolName
     @Published var isShowSchoolName=false
     @Published var SchoolNamerray:[StudentAcademicLevelModel] = [
@@ -46,6 +52,10 @@ class SchoolStageViewModel: ObservableObject {
     @Published var NationalIDNumber=""
     @Published var birthDate=Date()
     
+    @Published var isSecondStage=false
+    @Published var isThirdStage=false
+    @Published var isFirstStage=false
+    
     //upload
     @Published var isShowBirthCertificate=false
     @Published  var imageALLOWBirthC: Image? = Image("seen")
@@ -76,7 +86,7 @@ class SchoolStageViewModel: ObservableObject {
 
 
 struct StudentStage: View {
-    @StateObject var vm=SchoolStageViewModel()
+    @ObservedObject var vm:SchoolStageViewModel
 
     var body: some View {
         VStack(spacing:16) {
@@ -136,11 +146,12 @@ struct StudentStage: View {
                 UploadHealthReport(vm: vm)
             }
         }
+        .padding(.vertical)
     }
 }
 
-struct StudentStage_Previews: PreviewProvider {
-    static var previews: some View {
-        StudentStage()
-    }
-}
+//struct StudentStage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StudentStage()
+//    }
+//}

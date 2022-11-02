@@ -16,7 +16,9 @@ class SchoolTransportionServicesSceneiewModel:ObservableObject {
     ]
     @Published var studentName=""
     @Published var studentGrad=""
+    @Published var studentLocation=""
 
+    @Published var isShowMaps=false
 }
 
 struct SchoolSubmitApplication: View {
@@ -62,9 +64,19 @@ struct SchoolSubmitApplication: View {
                     Button {
                         
                     } label: {
-                        Text("Maps")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
+                        
+                        Label {
+                            Text("Maps")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                           
+                        } icon: {
+                            Image("Vector 4")
+                                .foregroundColor(Color.white)
+                        }
+
+                        
+                      
                             .padding(.vertical,8)
                             .padding(.horizontal,16)
                             .backgroundColor(ColorConstants.servicesTit)
@@ -77,6 +89,13 @@ struct SchoolSubmitApplication: View {
             .padding()
             .addBorder(Color.gray.opacity(0.4), width: 1, cornerRadius: 16)
         }
+        
+        .background(EmptyView()
+            .fullScreenCover(isPresented: $vm.isShowMaps, content: {
+                ChooseLocationScene(isShow: $vm.isShowMaps)
+
+            })
+                    )
     }
 }
 

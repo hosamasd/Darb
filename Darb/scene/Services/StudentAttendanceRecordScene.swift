@@ -143,6 +143,8 @@ struct StudentAttendanceRecordScene: View {
                 
             }
         }
+        .padding(.horizontal,8)
+
     }
 }
 

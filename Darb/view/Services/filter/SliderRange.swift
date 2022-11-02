@@ -29,12 +29,14 @@ struct SliderRange: View {
             
             RangedSliderView(value: $vm.sliderPosition, bounds: 1...100)
                 .padding(.horizontal)
+                .padding(.top)
             
         }
         .padding(.vertical)
         .onChange(of: vm.sliderPosition) { newValue in
             vm.lowerValue=Int(newValue.lowerBound)
             vm.highetValue=Int(newValue.upperBound)
+            vm.rangeCount=1
         }
     }
     
@@ -59,6 +61,6 @@ struct SliderRange: View {
 
 struct SchoolFilsterScene_Previews: PreviewProvider {
     static var previews: some View {
-        SchoolFilterScene()
+        SchoolFilterScene(vm: SchoolExplorerSceneViewModel())
     }
 }

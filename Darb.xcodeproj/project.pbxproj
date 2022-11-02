@@ -37,6 +37,10 @@
 		4E6802D2291023260090A3D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6802D1291023260090A3D7 /* Preview Assets.xcassets */; };
 		4E7AB2EF2910E98100DF6EC0 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AB2EE2910E98100DF6EC0 /* Custom.swift */; };
 		4E7AB2F12910EAAC00DF6EC0 /* CustomRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AB2F02910EAAC00DF6EC0 /* CustomRatingView.swift */; };
+		4E8DDAC429120D7700779F01 /* ReviewStageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DDAC329120D7700779F01 /* ReviewStageScene.swift */; };
+		4E92C37A29122DBF008E7450 /* ChooseLocationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92C37929122DBF008E7450 /* ChooseLocationScene.swift */; };
+		4E92C37C291231FD008E7450 /* SecsondChooseLocationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92C37B291231FD008E7450 /* SecsondChooseLocationScene.swift */; };
+		4E92C37E29123363008E7450 /* SecondChooseLocationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92C37D29123363008E7450 /* SecondChooseLocationScene.swift */; };
 		4E9E458929117A7200715A7D /* StudentStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458829117A7200715A7D /* StudentStage.swift */; };
 		4E9E458B29117C1D00715A7D /* UploadBirthCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */; };
 		4E9E458E291180B300715A7D /* UploadPortraitPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E458D291180B300715A7D /* UploadPortraitPhoto.swift */; };
@@ -85,6 +89,10 @@
 		4E6802D1291023260090A3D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E7AB2EE2910E98100DF6EC0 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		4E7AB2F02910EAAC00DF6EC0 /* CustomRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRatingView.swift; sourceTree = "<group>"; };
+		4E8DDAC329120D7700779F01 /* ReviewStageScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewStageScene.swift; sourceTree = "<group>"; };
+		4E92C37929122DBF008E7450 /* ChooseLocationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationScene.swift; sourceTree = "<group>"; };
+		4E92C37B291231FD008E7450 /* SecsondChooseLocationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecsondChooseLocationScene.swift; sourceTree = "<group>"; };
+		4E92C37D29123363008E7450 /* SecondChooseLocationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChooseLocationScene.swift; sourceTree = "<group>"; };
 		4E9E458829117A7200715A7D /* StudentStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStage.swift; sourceTree = "<group>"; };
 		4E9E458A29117C1D00715A7D /* UploadBirthCertificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadBirthCertificate.swift; sourceTree = "<group>"; };
 		4E9E458D291180B300715A7D /* UploadPortraitPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPortraitPhoto.swift; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 				4E9E458729117A6600715A7D /* student stage */,
 				4E34206429112F9000B6F0C7 /* SchoolEnrollmentApplicationsScene.swift */,
 				4E27D66129116A32003798D4 /* School Stage */,
+				4E8DDAC329120D7700779F01 /* ReviewStageScene.swift */,
 			);
 			path = "School Enrollment Applications";
 			sourceTree = "<group>";
@@ -157,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				4E3632C42910C7F500B37270 /* SchoolFilterScene.swift */,
+				4E92C37D29123363008E7450 /* SecondChooseLocationScene.swift */,
 			);
 			path = filter;
 			sourceTree = "<group>";
@@ -187,6 +197,7 @@
 		4E3676342910B855004D8BC8 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				4E3632C32910C7E000B37270 /* filter */,
 				4E3676352910B86A004D8BC8 /* SchoolExplorerScene.swift */,
 			);
 			path = school;
@@ -237,6 +248,8 @@
 			children = (
 				4E4DB9D329113B420069F334 /* SchoolTransportionServicesScene.swift */,
 				4E4DB9DC2911445A0069F334 /* SchoolSubmitApplication.swift */,
+				4E92C37929122DBF008E7450 /* ChooseLocationScene.swift */,
+				4E92C37B291231FD008E7450 /* SecsondChooseLocationScene.swift */,
 			);
 			path = "school trasnportion services";
 			sourceTree = "<group>";
@@ -378,7 +391,6 @@
 				4E4DB9D229113B1D0069F334 /* school trasnportion services */,
 				4E34206229112F7300B6F0C7 /* School Enrollment Applications */,
 				4E482061291111B0007FC403 /* School Details */,
-				4E3632C32910C7E000B37270 /* filter */,
 				4E3676342910B855004D8BC8 /* school */,
 				4EAE132929102F2200141181 /* MainSerivcesScene.swift */,
 				4E395A592911554C00EB1A12 /* StudentAttendanceRecordScene.swift */,
@@ -406,7 +418,6 @@
 				8D87FA025A49B2E36585AA22 /* Pods-Darb.debug.xcconfig */,
 				2CEA4160D7851E6BEA340DE5 /* Pods-Darb.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -524,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E92C37E29123363008E7450 /* SecondChooseLocationScene.swift in Sources */,
 				4E48205C29110BCE007FC403 /* SliderRange.swift in Sources */,
 				4E4DB9DB29113EDB0069F334 /* SliderValue.swift in Sources */,
 				4E3C1591291175F50030ACE9 /* Location.swift in Sources */,
@@ -538,6 +550,7 @@
 				4EAE131C2910244800141181 /* hideKeyboard.swift in Sources */,
 				4E3676392910BC09004D8BC8 /* SchoolRow.swift in Sources */,
 				4E3632C52910C7F500B37270 /* SchoolFilterScene.swift in Sources */,
+				4E8DDAC429120D7700779F01 /* ReviewStageScene.swift in Sources */,
 				4EAE13192910240B00141181 /* AppDelegate.swift in Sources */,
 				4E9E458929117A7200715A7D /* StudentStage.swift in Sources */,
 				4E6802CC291023250090A3D7 /* ContentView.swift in Sources */,
@@ -551,10 +564,12 @@
 				4EAE132829102B2400141181 /* ServiceRow.swift in Sources */,
 				4EAE132A29102F2200141181 /* MainSerivcesScene.swift in Sources */,
 				4E6802CA291023250090A3D7 /* DarbApp.swift in Sources */,
+				4E92C37A29122DBF008E7450 /* ChooseLocationScene.swift in Sources */,
 				4E9E4590291180C100715A7D /* UploadHealthReport.swift in Sources */,
 				4EAE13252910280900141181 /* EX_View.swift in Sources */,
 				4E9E458B29117C1D00715A7D /* UploadBirthCertificate.swift in Sources */,
 				4E9E458E291180B300715A7D /* UploadPortraitPhoto.swift in Sources */,
+				4E92C37C291231FD008E7450 /* SecsondChooseLocationScene.swift in Sources */,
 				4E4DB9D929113E230069F334 /* SchoolTransportionServicesRowView.swift in Sources */,
 				4E395A5A2911554C00EB1A12 /* StudentAttendanceRecordScene.swift in Sources */,
 				4E3676362910B86A004D8BC8 /* SchoolExplorerScene.swift in Sources */,
@@ -691,6 +706,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Darb need a permission to access your camera to Upload Images";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Darb need a permission to access your locations";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Darb need a permission to access your  locations";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -730,6 +749,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Darb need a permission to access your camera to Upload Images";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Darb need a permission to access your locations";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Darb need a permission to access your  locations";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

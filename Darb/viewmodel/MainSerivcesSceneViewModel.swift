@@ -21,7 +21,11 @@ class MainSerivcesSceneViewModel:ObservableObject {
     @Published var alertMsg=""
     @Published var alert=false
     
-    
+    @Published var isSchoolExplorer=false
+    @Published var isSchoolEnrollment=true
+    @Published var isSchoolTrasportationServices=false
+    @Published var isStudentAttendanceRecord=false
+
     var servicesArray:[ServiceRowModel] = [
     
         .init(name: "The School Explorer", img: "Vector"),

@@ -4,9 +4,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        StudentStage()
-//        SHomeTabBar()
+//        MainSerivcesScene()
+//        SchoolEnrollmentApplicationsScene()
+       
 //        SchoolStage()
+        
+        
+        SHomeTabBar()
     }
 }
 

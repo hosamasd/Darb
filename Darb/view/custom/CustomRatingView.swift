@@ -38,6 +38,7 @@ struct RateView:View {
 //    }
 struct CustomRatingView: View {
     @ObservedObject var vm : SchoolExplorerSceneViewModel
+   
     var body: some View {
         VStack{
             
@@ -82,6 +83,9 @@ struct CustomRatingView: View {
                             .onTapGesture {
                                 withAnimation{
 //                                    self.x=x
+                                    vm.count=1
+//                                    vm.count += 1
+//                                    self.vm.filterCount = vm.count == 1 ? vm.filterCount+1 : vm.filterCount
                                     self.vm.selectedRating=x
                                     vm.isShowRating.toggle()
                                 }

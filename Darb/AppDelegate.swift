@@ -11,7 +11,7 @@ import SwiftUI
 //import Firebase
 //import IQKeyboardManager
 
-//import GoogleMaps
+import GoogleMaps
 
 class AppDelegate : NSObject,UIApplicationDelegate{
     
@@ -29,7 +29,7 @@ class AppDelegate : NSObject,UIApplicationDelegate{
         
         
 //        CheckUpdate.shared.showUpdate(withConfirmation: true)
-//        GMSServices.provideAPIKey("AIzaSyB94A14LWHvUM4a8_WhVcWLWP9Oe7nDLiY")
+        GMSServices.provideAPIKey("sadsadsadsadsadsadsads")
 //
 //        IQKeyboardManager.shared().isEnabled = true
 //        IQKeyboardManager.shared().toolbarDoneBarButtonItemText = "Done"
